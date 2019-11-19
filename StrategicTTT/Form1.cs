@@ -13,7 +13,7 @@ namespace StrategicTTT
     public partial class Form1 : Form
     {
         // 1 or 2. Holds the current playing turn.
-        int turn;
+        int turn = 1;
 
 
         public Form1()
@@ -23,8 +23,6 @@ namespace StrategicTTT
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            turn = 1;
-            TurnDisplay();
             this.BackColor = Color.FromArgb(255, 245, 238);
         }
 

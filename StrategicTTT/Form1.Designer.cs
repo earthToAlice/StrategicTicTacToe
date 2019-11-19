@@ -51,26 +51,27 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.Controls.Add(this.player1Label, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.player2Label, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.player2Label, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.playGrid, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.44959F));
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.100831F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.44958F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(684, 450);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // player1Label
             // 
             this.player1Label.AutoSize = true;
+            this.player1Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(225)))), ((int)(((byte)(218)))));
             this.player1Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.player1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.player1Label.Location = new System.Drawing.Point(481, 142);
+            this.player1Label.Location = new System.Drawing.Point(481, 150);
             this.player1Label.Name = "player1Label";
             this.player1Label.Size = new System.Drawing.Size(200, 75);
             this.player1Label.TabIndex = 1;
@@ -82,7 +83,7 @@
             this.player2Label.AutoSize = true;
             this.player2Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.player2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.player2Label.Location = new System.Drawing.Point(481, 232);
+            this.player2Label.Location = new System.Drawing.Point(481, 225);
             this.player2Label.Name = "player2Label";
             this.player2Label.Size = new System.Drawing.Size(200, 75);
             this.player2Label.TabIndex = 2;
@@ -109,7 +110,7 @@
             this.playGrid.Margin = new System.Windows.Forms.Padding(10);
             this.playGrid.Name = "playGrid";
             this.playGrid.RowCount = 3;
-            this.tableLayoutPanel1.SetRowSpan(this.playGrid, 5);
+            this.tableLayoutPanel1.SetRowSpan(this.playGrid, 4);
             this.playGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33533F));
             this.playGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33233F));
             this.playGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33233F));
