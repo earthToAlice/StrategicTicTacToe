@@ -31,22 +31,63 @@ namespace StrategicTTT
             SwapTurns();
         }
 
+        private void tile2_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
+        private void tile3_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
+        private void tile4_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
+        private void tile5_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
+        private void tile6_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
+        private void tile7_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
+        private void tile8_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
+        private void tile9_Click(object sender, EventArgs e)
+        {
+            SwapTurns();
+        }
+
         // ---- Custom Methods ---- //
 
+        // =-=-=-= START TURN-RELATED METHODS =-=-=-= //
         private void SwapTurns()
         {
             switch (turn)
             {
                 case 1:
                     turn = 2;
-                    TurnDisplay();
                     break;
 
                 case 2:
                     turn = 1;
-                    TurnDisplay();
                     break;
             }
+
+            TurnDisplay();
 
         } //swapTurn()
 

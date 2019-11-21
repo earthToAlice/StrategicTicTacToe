@@ -129,6 +129,7 @@
             this.tile9.Size = new System.Drawing.Size(144, 144);
             this.tile9.TabIndex = 8;
             this.tile9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile9.Click += new System.EventHandler(this.tile9_Click);
             // 
             // tile8
             // 
@@ -142,6 +143,7 @@
             this.tile8.Size = new System.Drawing.Size(143, 144);
             this.tile8.TabIndex = 7;
             this.tile8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile8.Click += new System.EventHandler(this.tile8_Click);
             // 
             // tile7
             // 
@@ -155,6 +157,7 @@
             this.tile7.Size = new System.Drawing.Size(143, 144);
             this.tile7.TabIndex = 6;
             this.tile7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile7.Click += new System.EventHandler(this.tile7_Click);
             // 
             // tile6
             // 
@@ -168,6 +171,7 @@
             this.tile6.Size = new System.Drawing.Size(144, 143);
             this.tile6.TabIndex = 5;
             this.tile6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile6.Click += new System.EventHandler(this.tile6_Click);
             // 
             // tile5
             // 
@@ -181,6 +185,7 @@
             this.tile5.Size = new System.Drawing.Size(143, 143);
             this.tile5.TabIndex = 4;
             this.tile5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile5.Click += new System.EventHandler(this.tile5_Click);
             // 
             // tile4
             // 
@@ -194,6 +199,7 @@
             this.tile4.Size = new System.Drawing.Size(143, 143);
             this.tile4.TabIndex = 3;
             this.tile4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile4.Click += new System.EventHandler(this.tile4_Click);
             // 
             // tile3
             // 
@@ -207,6 +213,7 @@
             this.tile3.Size = new System.Drawing.Size(144, 143);
             this.tile3.TabIndex = 2;
             this.tile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile3.Click += new System.EventHandler(this.tile3_Click);
             // 
             // tile2
             // 
@@ -220,6 +227,7 @@
             this.tile2.Size = new System.Drawing.Size(143, 143);
             this.tile2.TabIndex = 1;
             this.tile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tile2.Click += new System.EventHandler(this.tile2_Click);
             // 
             // tile1
             // 
