@@ -13,9 +13,10 @@ namespace StrategicTTT
     public partial class Form1 : Form
     {
         // 1 or 2. Holds the current playing turn.
-        int turn = 1;
-
-
+        char turn = 'X';
+        // Holds the values of each tile
+        char[,] grid = new char[3, 3];
+ 
         public Form1()
         {
             InitializeComponent();
@@ -28,62 +29,81 @@ namespace StrategicTTT
 
         private void tile1_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(1, tile1);
         }
 
         private void tile2_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(2, tile2);
         }
 
         private void tile3_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(3, tile3);
         }
 
         private void tile4_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(4, tile4);
         }
 
         private void tile5_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(5, tile5);
         }
 
         private void tile6_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(6, tile6);
         }
 
         private void tile7_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(7, tile7);
         }
 
         private void tile8_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(8, tile8);
         }
 
         private void tile9_Click(object sender, EventArgs e)
         {
-            SwapTurns();
+            UpdateBoard(9, tile9);
         }
 
         // ---- Custom Methods ---- //
 
+        // =-=-=-= START GAME LOGIC METHODS =-=-=-= //
+
+        private void UpdateBoard(int tileNum, Label tile)
+        {
+            int i = 0, j;
+            while ((tileNum - 1) - (i * 3) >= 3) i++;
+            j = (tileNum - 1) - (i * 3);
+
+            if (grid[i, j] == '\0')
+            {
+                grid[i, j] = turn;
+                tile.Text = Convert.ToString(grid[i, j]);
+                SwapTurns();
+            }
+        }
+
+        // =-=-=-= END GAME LOGIC METHODS =-=-=-= //
+
         // =-=-=-= START TURN-RELATED METHODS =-=-=-= //
+
         private void SwapTurns()
         {
             switch (turn)
             {
-                case 1:
-                    turn = 2;
+                case 'X':
+                    turn = 'O';
                     break;
 
-                case 2:
-                    turn = 1;
+                case 'O':
+                    turn = 'X';
                     break;
             }
 
@@ -95,14 +115,14 @@ namespace StrategicTTT
         {
             switch (turn)
             {
-                case 1:
+                case 'X':
                     player1Label.Font = new Font("Microsoft Sans Serif", 25, FontStyle.Bold);
                     player2Label.Font = new Font("Microsoft Sans Serif", 20, FontStyle.Regular);
                     player1Label.BackColor = Color.FromArgb(235, 225, 218);
                     player2Label.BackColor = Color.Transparent;
                     break;
 
-                case 2:
+                case 'O':
                     player1Label.Font = new Font("Microsoft Sans Serif", 20, FontStyle.Regular);
                     player2Label.Font = new Font("Microsoft Sans Serif", 25, FontStyle.Bold);
                     player1Label.BackColor = Color.Transparent;
@@ -111,6 +131,7 @@ namespace StrategicTTT
             }
         }
 
+        // =-=-=-= END TURN-RELATED METHODS =-=-=-= //
         
     }
 }
