@@ -16,6 +16,7 @@ namespace StrategicTTT
         char turn = 'X';
         // Holds the values of each tile
         char[,] grid = new char[3, 3];
+        char[,] superGrid = new char[3, 3];
  
         public Form1()
         {
@@ -24,53 +25,17 @@ namespace StrategicTTT
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            for (int i = 1; i <= 9; i++)
+            {
+                for (int j = 1; j <= 9; j++)
+                {
+                    ((Label)this.Controls.Find($"Mini{i}Tile{j}", true)[0]).Text = $"{i*j}";
+                }
+            }
             this.BackColor = Color.FromArgb(255, 245, 238);
         }
 
-        private void tile1_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(1, tile1);
-        }
-
-        private void tile2_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(2, tile2);
-        }
-
-        private void tile3_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(3, tile3);
-        }
-
-        private void tile4_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(4, tile4);
-        }
-
-        private void tile5_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(5, tile5);
-        }
-
-        private void tile6_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(6, tile6);
-        }
-
-        private void tile7_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(7, tile7);
-        }
-
-        private void tile8_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(8, tile8);
-        }
-
-        private void tile9_Click(object sender, EventArgs e)
-        {
-            UpdateBoard(9, tile9);
-        }
+        
 
         // ---- Custom Methods ---- //
 
@@ -78,16 +43,41 @@ namespace StrategicTTT
 
         private void UpdateBoard(int tileNum, Label tile)
         {
-            int i = 0, j;
-            while ((tileNum - 1) - (i * 3) >= 3) i++;
-            j = (tileNum - 1) - (i * 3);
+            int i = tileNum % 3;
+            int j = tileNum / 3;
 
             if (grid[i, j] == '\0')
             {
                 grid[i, j] = turn;
                 tile.Text = Convert.ToString(grid[i, j]);
+                if (CheckWin()) superGrid[i, j] = turn;
                 SwapTurns();
             }
+            
+        }
+
+        private bool CheckWin()
+        {
+            int h, v, up, down;
+
+            for (int i = 0; i < 3; i++)
+            {
+                h = 0;
+                v = 0;
+                up = 0;
+                down = 0;
+                
+                for (int j = 0; j < 3; j++)
+                {
+                    if (grid[i, j] == turn) h++;
+                    if (grid[j, i] == turn) v++;
+                    if (grid[j, 2 - j] == turn) up++;
+                    if (grid[j, j] == turn) down++;
+                    if (h == 3 || v == 3 || up == 3 || down == 3) return true;
+                }
+            }
+
+            return false;
         }
 
         // =-=-=-= END GAME LOGIC METHODS =-=-=-= //
