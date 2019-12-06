@@ -80,8 +80,12 @@ namespace StrategicTTT
                 
                 boardGrid[sbi1, sbi2].Update();
 
+                ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.Transparent;
+
                 sbi1 = i;
                 sbi2 = j;
+
+                ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
             }
         }
 
@@ -149,6 +153,8 @@ namespace StrategicTTT
                     break;
             }
         }
+
+        // =-=-=-= END TURN-RELATED METHODS =-=-=-= //
 
         class Board
         {
