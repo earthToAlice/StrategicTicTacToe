@@ -122,6 +122,24 @@
             this.Mini1Tile3 = new System.Windows.Forms.Label();
             this.Mini1Tile2 = new System.Windows.Forms.Label();
             this.Mini1Tile1 = new System.Windows.Forms.Label();
+            this.Cell2 = new System.Windows.Forms.Panel();
+            this.Cell1 = new System.Windows.Forms.Panel();
+            this.Cell3 = new System.Windows.Forms.Panel();
+            this.Cell4 = new System.Windows.Forms.Panel();
+            this.Cell5 = new System.Windows.Forms.Panel();
+            this.Cell6 = new System.Windows.Forms.Panel();
+            this.Cell7 = new System.Windows.Forms.Panel();
+            this.Cell8 = new System.Windows.Forms.Panel();
+            this.Cell9 = new System.Windows.Forms.Panel();
+            this.winLabel1 = new System.Windows.Forms.Label();
+            this.winLabel2 = new System.Windows.Forms.Label();
+            this.winLabel3 = new System.Windows.Forms.Label();
+            this.winLabel4 = new System.Windows.Forms.Label();
+            this.winLabel5 = new System.Windows.Forms.Label();
+            this.winLabel6 = new System.Windows.Forms.Label();
+            this.winLabel7 = new System.Windows.Forms.Label();
+            this.winLabel8 = new System.Windows.Forms.Label();
+            this.winLabel9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.superGridLayout.SuspendLayout();
             this.miniGrid9.SuspendLayout();
@@ -133,6 +151,15 @@
             this.miniGrid3.SuspendLayout();
             this.miniGrid2.SuspendLayout();
             this.miniGrid1.SuspendLayout();
+            this.Cell2.SuspendLayout();
+            this.Cell1.SuspendLayout();
+            this.Cell3.SuspendLayout();
+            this.Cell4.SuspendLayout();
+            this.Cell5.SuspendLayout();
+            this.Cell6.SuspendLayout();
+            this.Cell7.SuspendLayout();
+            this.Cell8.SuspendLayout();
+            this.Cell9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -165,7 +192,7 @@
             this.player1Label.Name = "player1Label";
             this.player1Label.Size = new System.Drawing.Size(200, 75);
             this.player1Label.TabIndex = 1;
-            this.player1Label.Text = "Player 1";
+            this.player1Label.Text = "Player X";
             this.player1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // player2Label
@@ -177,7 +204,7 @@
             this.player2Label.Name = "player2Label";
             this.player2Label.Size = new System.Drawing.Size(200, 75);
             this.player2Label.TabIndex = 2;
-            this.player2Label.Text = "Player 2";
+            this.player2Label.Text = "Player O";
             this.player2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // superGridLayout
@@ -188,15 +215,15 @@
             this.superGridLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.superGridLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.superGridLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.superGridLayout.Controls.Add(this.miniGrid9, 2, 2);
-            this.superGridLayout.Controls.Add(this.miniGrid8, 1, 2);
-            this.superGridLayout.Controls.Add(this.miniGrid7, 0, 2);
-            this.superGridLayout.Controls.Add(this.miniGrid6, 2, 1);
-            this.superGridLayout.Controls.Add(this.miniGrid5, 1, 1);
-            this.superGridLayout.Controls.Add(this.miniGrid4, 0, 1);
-            this.superGridLayout.Controls.Add(this.miniGrid3, 2, 0);
-            this.superGridLayout.Controls.Add(this.miniGrid2, 1, 0);
-            this.superGridLayout.Controls.Add(this.miniGrid1, 0, 0);
+            this.superGridLayout.Controls.Add(this.Cell2, 1, 0);
+            this.superGridLayout.Controls.Add(this.Cell1, 0, 0);
+            this.superGridLayout.Controls.Add(this.Cell3, 2, 0);
+            this.superGridLayout.Controls.Add(this.Cell4, 0, 1);
+            this.superGridLayout.Controls.Add(this.Cell5, 1, 1);
+            this.superGridLayout.Controls.Add(this.Cell6, 2, 1);
+            this.superGridLayout.Controls.Add(this.Cell7, 0, 2);
+            this.superGridLayout.Controls.Add(this.Cell8, 1, 2);
+            this.superGridLayout.Controls.Add(this.Cell9, 2, 2);
             this.superGridLayout.Location = new System.Drawing.Point(38, 10);
             this.superGridLayout.Margin = new System.Windows.Forms.Padding(10);
             this.superGridLayout.Name = "superGridLayout";
@@ -205,6 +232,7 @@
             this.superGridLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33533F));
             this.superGridLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33233F));
             this.superGridLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33233F));
+            this.superGridLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.superGridLayout.Size = new System.Drawing.Size(430, 430);
             this.superGridLayout.TabIndex = 3;
             // 
@@ -224,7 +252,7 @@
             this.miniGrid9.Controls.Add(this.Mini9Tile2, 1, 0);
             this.miniGrid9.Controls.Add(this.Mini9Tile1, 0, 0);
             this.miniGrid9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid9.Location = new System.Drawing.Point(290, 289);
+            this.miniGrid9.Location = new System.Drawing.Point(0, 0);
             this.miniGrid9.Name = "miniGrid9";
             this.miniGrid9.RowCount = 3;
             this.miniGrid9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -348,7 +376,7 @@
             this.miniGrid8.Controls.Add(this.Mini8Tile2, 1, 0);
             this.miniGrid8.Controls.Add(this.Mini8Tile1, 0, 0);
             this.miniGrid8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid8.Location = new System.Drawing.Point(147, 289);
+            this.miniGrid8.Location = new System.Drawing.Point(0, 0);
             this.miniGrid8.Name = "miniGrid8";
             this.miniGrid8.RowCount = 3;
             this.miniGrid8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -472,7 +500,7 @@
             this.miniGrid7.Controls.Add(this.Mini7Tile2, 1, 0);
             this.miniGrid7.Controls.Add(this.Mini7Tile1, 0, 0);
             this.miniGrid7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid7.Location = new System.Drawing.Point(4, 289);
+            this.miniGrid7.Location = new System.Drawing.Point(0, 0);
             this.miniGrid7.Name = "miniGrid7";
             this.miniGrid7.RowCount = 3;
             this.miniGrid7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -596,7 +624,7 @@
             this.miniGrid6.Controls.Add(this.Mini6Tile2, 1, 0);
             this.miniGrid6.Controls.Add(this.Mini6Tile1, 0, 0);
             this.miniGrid6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid6.Location = new System.Drawing.Point(290, 147);
+            this.miniGrid6.Location = new System.Drawing.Point(0, 0);
             this.miniGrid6.Name = "miniGrid6";
             this.miniGrid6.RowCount = 3;
             this.miniGrid6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -720,7 +748,7 @@
             this.miniGrid5.Controls.Add(this.Mini5Tile2, 1, 0);
             this.miniGrid5.Controls.Add(this.Mini5Tile1, 0, 0);
             this.miniGrid5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid5.Location = new System.Drawing.Point(147, 147);
+            this.miniGrid5.Location = new System.Drawing.Point(0, 0);
             this.miniGrid5.Name = "miniGrid5";
             this.miniGrid5.RowCount = 3;
             this.miniGrid5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -844,7 +872,7 @@
             this.miniGrid4.Controls.Add(this.Mini4Tile2, 1, 0);
             this.miniGrid4.Controls.Add(this.Mini4Tile1, 0, 0);
             this.miniGrid4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid4.Location = new System.Drawing.Point(4, 147);
+            this.miniGrid4.Location = new System.Drawing.Point(0, 0);
             this.miniGrid4.Name = "miniGrid4";
             this.miniGrid4.RowCount = 3;
             this.miniGrid4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -968,7 +996,7 @@
             this.miniGrid3.Controls.Add(this.Mini3Tile2, 1, 0);
             this.miniGrid3.Controls.Add(this.Mini3Tile1, 0, 0);
             this.miniGrid3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid3.Location = new System.Drawing.Point(290, 4);
+            this.miniGrid3.Location = new System.Drawing.Point(0, 0);
             this.miniGrid3.Name = "miniGrid3";
             this.miniGrid3.RowCount = 3;
             this.miniGrid3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -1092,7 +1120,7 @@
             this.miniGrid2.Controls.Add(this.Mini2Tile2, 1, 0);
             this.miniGrid2.Controls.Add(this.Mini2Tile1, 0, 0);
             this.miniGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid2.Location = new System.Drawing.Point(147, 4);
+            this.miniGrid2.Location = new System.Drawing.Point(0, 0);
             this.miniGrid2.Name = "miniGrid2";
             this.miniGrid2.RowCount = 3;
             this.miniGrid2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -1217,12 +1245,13 @@
             this.miniGrid1.Controls.Add(this.Mini1Tile2, 1, 0);
             this.miniGrid1.Controls.Add(this.Mini1Tile1, 0, 0);
             this.miniGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid1.Location = new System.Drawing.Point(4, 4);
+            this.miniGrid1.Location = new System.Drawing.Point(0, 0);
             this.miniGrid1.Name = "miniGrid1";
             this.miniGrid1.RowCount = 3;
             this.miniGrid1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.miniGrid1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.miniGrid1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.miniGrid1.Size = new System.Drawing.Size(136, 136);
             this.miniGrid1.TabIndex = 0;
             // 
@@ -1326,6 +1355,222 @@
             this.Mini1Tile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Mini1Tile1.Click += new System.EventHandler(this.Tile_Click);
             // 
+            // Cell2
+            // 
+            this.Cell2.Controls.Add(this.winLabel2);
+            this.Cell2.Controls.Add(this.miniGrid2);
+            this.Cell2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell2.Location = new System.Drawing.Point(147, 4);
+            this.Cell2.Name = "Cell2";
+            this.Cell2.Size = new System.Drawing.Size(136, 136);
+            this.Cell2.TabIndex = 9;
+            // 
+            // Cell1
+            // 
+            this.Cell1.Controls.Add(this.winLabel1);
+            this.Cell1.Controls.Add(this.miniGrid1);
+            this.Cell1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell1.Location = new System.Drawing.Point(4, 4);
+            this.Cell1.Name = "Cell1";
+            this.Cell1.Size = new System.Drawing.Size(136, 136);
+            this.Cell1.TabIndex = 10;
+            // 
+            // Cell3
+            // 
+            this.Cell3.Controls.Add(this.winLabel3);
+            this.Cell3.Controls.Add(this.miniGrid3);
+            this.Cell3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell3.Location = new System.Drawing.Point(290, 4);
+            this.Cell3.Name = "Cell3";
+            this.Cell3.Size = new System.Drawing.Size(136, 136);
+            this.Cell3.TabIndex = 11;
+            // 
+            // Cell4
+            // 
+            this.Cell4.Controls.Add(this.winLabel4);
+            this.Cell4.Controls.Add(this.miniGrid4);
+            this.Cell4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell4.Location = new System.Drawing.Point(4, 147);
+            this.Cell4.Name = "Cell4";
+            this.Cell4.Size = new System.Drawing.Size(136, 135);
+            this.Cell4.TabIndex = 12;
+            // 
+            // Cell5
+            // 
+            this.Cell5.Controls.Add(this.winLabel5);
+            this.Cell5.Controls.Add(this.miniGrid5);
+            this.Cell5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell5.Location = new System.Drawing.Point(147, 147);
+            this.Cell5.Name = "Cell5";
+            this.Cell5.Size = new System.Drawing.Size(136, 135);
+            this.Cell5.TabIndex = 13;
+            // 
+            // Cell6
+            // 
+            this.Cell6.Controls.Add(this.winLabel6);
+            this.Cell6.Controls.Add(this.miniGrid6);
+            this.Cell6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell6.Location = new System.Drawing.Point(290, 147);
+            this.Cell6.Name = "Cell6";
+            this.Cell6.Size = new System.Drawing.Size(136, 135);
+            this.Cell6.TabIndex = 14;
+            // 
+            // Cell7
+            // 
+            this.Cell7.Controls.Add(this.winLabel7);
+            this.Cell7.Controls.Add(this.miniGrid7);
+            this.Cell7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell7.Location = new System.Drawing.Point(4, 289);
+            this.Cell7.Name = "Cell7";
+            this.Cell7.Size = new System.Drawing.Size(136, 137);
+            this.Cell7.TabIndex = 15;
+            // 
+            // Cell8
+            // 
+            this.Cell8.Controls.Add(this.winLabel8);
+            this.Cell8.Controls.Add(this.miniGrid8);
+            this.Cell8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell8.Location = new System.Drawing.Point(147, 289);
+            this.Cell8.Name = "Cell8";
+            this.Cell8.Size = new System.Drawing.Size(136, 137);
+            this.Cell8.TabIndex = 16;
+            // 
+            // Cell9
+            // 
+            this.Cell9.Controls.Add(this.winLabel9);
+            this.Cell9.Controls.Add(this.miniGrid9);
+            this.Cell9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell9.Location = new System.Drawing.Point(290, 289);
+            this.Cell9.Name = "Cell9";
+            this.Cell9.Size = new System.Drawing.Size(136, 137);
+            this.Cell9.TabIndex = 17;
+            // 
+            // winLabel1
+            // 
+            this.winLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel1.Location = new System.Drawing.Point(0, 0);
+            this.winLabel1.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel1.Name = "winLabel1";
+            this.winLabel1.Size = new System.Drawing.Size(136, 136);
+            this.winLabel1.TabIndex = 1;
+            this.winLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel1.Visible = false;
+            // 
+            // winLabel2
+            // 
+            this.winLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel2.Location = new System.Drawing.Point(0, 0);
+            this.winLabel2.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel2.Name = "winLabel2";
+            this.winLabel2.Size = new System.Drawing.Size(136, 136);
+            this.winLabel2.TabIndex = 2;
+            this.winLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel2.Visible = false;
+            // 
+            // winLabel3
+            // 
+            this.winLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel3.Location = new System.Drawing.Point(0, 0);
+            this.winLabel3.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel3.Name = "winLabel3";
+            this.winLabel3.Size = new System.Drawing.Size(136, 136);
+            this.winLabel3.TabIndex = 3;
+            this.winLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel3.Visible = false;
+            // 
+            // winLabel4
+            // 
+            this.winLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel4.Location = new System.Drawing.Point(0, 0);
+            this.winLabel4.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel4.Name = "winLabel4";
+            this.winLabel4.Size = new System.Drawing.Size(136, 135);
+            this.winLabel4.TabIndex = 4;
+            this.winLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel4.Visible = false;
+            // 
+            // winLabel5
+            // 
+            this.winLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel5.Location = new System.Drawing.Point(0, 0);
+            this.winLabel5.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel5.Name = "winLabel5";
+            this.winLabel5.Size = new System.Drawing.Size(136, 135);
+            this.winLabel5.TabIndex = 5;
+            this.winLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel5.Visible = false;
+            // 
+            // winLabel6
+            // 
+            this.winLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel6.Location = new System.Drawing.Point(0, 0);
+            this.winLabel6.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel6.Name = "winLabel6";
+            this.winLabel6.Size = new System.Drawing.Size(136, 135);
+            this.winLabel6.TabIndex = 6;
+            this.winLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel6.Visible = false;
+            // 
+            // winLabel7
+            // 
+            this.winLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel7.Location = new System.Drawing.Point(0, 0);
+            this.winLabel7.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel7.Name = "winLabel7";
+            this.winLabel7.Size = new System.Drawing.Size(136, 137);
+            this.winLabel7.TabIndex = 7;
+            this.winLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel7.Visible = false;
+            // 
+            // winLabel8
+            // 
+            this.winLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel8.Location = new System.Drawing.Point(0, 0);
+            this.winLabel8.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel8.Name = "winLabel8";
+            this.winLabel8.Size = new System.Drawing.Size(136, 137);
+            this.winLabel8.TabIndex = 8;
+            this.winLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel8.Visible = false;
+            // 
+            // winLabel9
+            // 
+            this.winLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel9.Location = new System.Drawing.Point(0, 0);
+            this.winLabel9.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel9.Name = "winLabel9";
+            this.winLabel9.Size = new System.Drawing.Size(136, 137);
+            this.winLabel9.TabIndex = 9;
+            this.winLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel9.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1358,6 +1603,15 @@
             this.miniGrid2.PerformLayout();
             this.miniGrid1.ResumeLayout(false);
             this.miniGrid1.PerformLayout();
+            this.Cell2.ResumeLayout(false);
+            this.Cell1.ResumeLayout(false);
+            this.Cell3.ResumeLayout(false);
+            this.Cell4.ResumeLayout(false);
+            this.Cell5.ResumeLayout(false);
+            this.Cell6.ResumeLayout(false);
+            this.Cell7.ResumeLayout(false);
+            this.Cell8.ResumeLayout(false);
+            this.Cell9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1467,6 +1721,24 @@
         private System.Windows.Forms.Label Mini1Tile3;
         private System.Windows.Forms.Label Mini1Tile2;
         private System.Windows.Forms.Label Mini1Tile1;
+        private System.Windows.Forms.Panel Cell2;
+        private System.Windows.Forms.Panel Cell1;
+        private System.Windows.Forms.Panel Cell3;
+        private System.Windows.Forms.Panel Cell4;
+        private System.Windows.Forms.Panel Cell5;
+        private System.Windows.Forms.Panel Cell6;
+        private System.Windows.Forms.Panel Cell7;
+        private System.Windows.Forms.Panel Cell8;
+        private System.Windows.Forms.Panel Cell9;
+        private System.Windows.Forms.Label winLabel1;
+        private System.Windows.Forms.Label winLabel2;
+        private System.Windows.Forms.Label winLabel3;
+        private System.Windows.Forms.Label winLabel4;
+        private System.Windows.Forms.Label winLabel5;
+        private System.Windows.Forms.Label winLabel6;
+        private System.Windows.Forms.Label winLabel7;
+        private System.Windows.Forms.Label winLabel8;
+        private System.Windows.Forms.Label winLabel9;
     }
 }
 

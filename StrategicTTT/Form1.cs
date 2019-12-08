@@ -18,6 +18,7 @@ namespace StrategicTTT
         // Holds the values of each tile
         Board[,] boardGrid = new Board[3, 3];
         char[,] superGrid = new char[3, 3];
+        // Flags whether selected grid is full
 
         public Form1()
         {
@@ -39,11 +40,14 @@ namespace StrategicTTT
                 }
             }
 
+            ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
+
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
                     boardGrid[i, j] = new Board(((j + 1) + (i * 3)), this);
+                    ((Label)((Panel)Controls.Find($"Cell{((j + 1) + (i * 3))}", true)[0]).Controls.Find($"winLabel{((j + 1) + (i * 3))}", true)[0]).BackColor = Color.FromArgb(0, 255, 255, 255);
                 }
             }
 
@@ -65,26 +69,51 @@ namespace StrategicTTT
 
         private void UpdateBoard(int tileNum, int miniNum)
         {
+            // Parses tileNum into 2 numbers usable as a 2D index
             int i = tileNum / 3;
             int j = tileNum % 3;
+
             char[,] activeGrid = boardGrid[sbi1, sbi2].Grid;
 
+            // Executes if the player clicked inside the correct
+            // miniGrid AND the tile clicked was empty
             if ((miniNum == (sbi2 + (sbi1 * 3))) && (activeGrid[i, j] == '\0'))
             {
+                // Sets the clicked tile to the playing letter
                 activeGrid[i, j] = turn;
-                
-                if (CheckWin(activeGrid)) superGrid[sbi1, sbi2] = turn;
+                boardGrid[sbi1, sbi2].playedTiles++;
+
+                // If the miniGrid is full, set superGrid at current pos to ⨂
+                if (boardGrid[sbi1, sbi2].playedTiles == 9)
+                {
+                    superGrid[sbi1, sbi2] = '⨂';
+                    UpdateWinLabel(miniNum);
+                }
+
+                // If the miniGrid was won, set superGrid at current pos to playing letter
+                if (CheckWin(activeGrid))
+                {
+                    superGrid[sbi1, sbi2] = turn;
+                    UpdateWinLabel(miniNum);
+                }
+                // If superGrid was won, terminate all processes and exit
+                // [CHANGE TO WIN SCREEN]
                 if (CheckWin(superGrid)) Application.Exit();
                 
+                // X => O or O => X
                 SwapTurns();
                 
-                boardGrid[sbi1, sbi2].Update();
+                // Update the screen with the current grid
+                boardGrid[sbi1, sbi2].UpdateMini(i, j);
 
+                // Resets TableLayoutPanel bg
                 ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.Transparent;
 
+                // Updates superBoardIndexes
                 sbi1 = i;
                 sbi2 = j;
 
+                // Highlights current TableLayoutPanel
                 ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
             }
         }
@@ -111,6 +140,14 @@ namespace StrategicTTT
             }
 
             return false;
+        }
+
+        private void UpdateWinLabel(int miniNum)
+        {
+            Panel activePanel = ((Panel)Controls.Find($"Cell{miniNum + 1}", true)[0]);
+            Label activeLabel = ((Label)activePanel.Controls.Find($"winLabel{miniNum + 1}", true)[0]);
+            activeLabel.Text = Convert.ToString(superGrid[sbi1, sbi2]);
+            activeLabel.Visible = true;
         }
 
         // =-=-=-= END GAME LOGIC METHODS =-=-=-= //
@@ -159,28 +196,16 @@ namespace StrategicTTT
         class Board
         {
             int miniID;
-            Form form;
-            private char[,] grid = new char[3, 3];
-            public char[,] Grid {
-                get { return grid; }
-                set { grid = value; }
-            }
+            public int playedTiles = 0;
+            public char[,] Grid { get; set; } = new char[3, 3];
+            Form f;
 
-            public Board(int id, Form form)
-            {
-                miniID = id;
-                this.form = form;
-            }
+            public Board(int id, Form f) { miniID = id; this.f = f; }
             
-            public void Update()
+            // Updates the objects on-screen grid with the values in Grid
+            public void UpdateMini(int i, int j)
             {
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        ((Label)form.Controls.Find($"Mini{miniID}Tile{((j + 1) + (i * 3))}", true)[0]).Text = Convert.ToString(grid[i, j]);
-                    }
-                }
+                ((Label)f.Controls.Find($"Mini{miniID}Tile{((j + 1) + (i * 3))}", true)[0]).Text = Convert.ToString(Grid[i, j]);
             }
         }
     }
