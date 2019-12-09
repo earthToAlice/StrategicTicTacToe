@@ -18,7 +18,6 @@ namespace StrategicTTT
         // Holds the values of each tile
         Board[,] boardGrid = new Board[3, 3];
         char[,] superGrid = new char[3, 3];
-        // Flags whether selected grid is full
 
         public Form1()
         {
@@ -47,7 +46,6 @@ namespace StrategicTTT
                 for (int j = 0; j < 3; j++)
                 {
                     boardGrid[i, j] = new Board(((j + 1) + (i * 3)), this);
-                    ((Label)((Panel)Controls.Find($"Cell{((j + 1) + (i * 3))}", true)[0]).Controls.Find($"winLabel{((j + 1) + (i * 3))}", true)[0]).BackColor = Color.FromArgb(0, 255, 255, 255);
                 }
             }
 
@@ -70,32 +68,30 @@ namespace StrategicTTT
         private void UpdateBoard(int tileNum, int miniNum)
         {
             // Parses tileNum into 2 numbers usable as a 2D index
-            int i = tileNum / 3;
-            int j = tileNum % 3;
+            int idx1 = tileNum / 3;
+            int idx2 = tileNum % 3;
+            sbi1 = miniNum / 3;
+            sbi2 = miniNum % 3;
 
             char[,] activeGrid = boardGrid[sbi1, sbi2].Grid;
 
             // Executes if the player clicked inside the correct
             // miniGrid AND the tile clicked was empty
-            if ((miniNum == (sbi2 + (sbi1 * 3))) && (activeGrid[i, j] == '\0'))
+            if (CheckValidMini(miniNum) && (activeGrid[idx1, idx2] == '\0'))
             {
                 // Sets the clicked tile to the playing letter
-                activeGrid[i, j] = turn;
+                activeGrid[idx1, idx2] = turn;
                 boardGrid[sbi1, sbi2].playedTiles++;
 
                 // If the miniGrid is full, set superGrid at current pos to ⨂
-                if (boardGrid[sbi1, sbi2].playedTiles == 9)
-                {
-                    superGrid[sbi1, sbi2] = '⨂';
-                    UpdateWinLabel(miniNum);
-                }
+                if (boardGrid[sbi1, sbi2].playedTiles == 9) superGrid[sbi1, sbi2] = '⨂';
 
                 // If the miniGrid was won, set superGrid at current pos to playing letter
-                if (CheckWin(activeGrid))
-                {
-                    superGrid[sbi1, sbi2] = turn;
-                    UpdateWinLabel(miniNum);
-                }
+                if (CheckWin(activeGrid)) superGrid[sbi1, sbi2] = turn;
+
+                // Updates the winLabel for the current miniGrid
+                if (superGrid[sbi1, sbi2] != '\0') UpdateWinLabel(miniNum);
+
                 // If superGrid was won, terminate all processes and exit
                 // [CHANGE TO WIN SCREEN]
                 if (CheckWin(superGrid)) Application.Exit();
@@ -104,17 +100,23 @@ namespace StrategicTTT
                 SwapTurns();
                 
                 // Update the screen with the current grid
-                boardGrid[sbi1, sbi2].UpdateMini(i, j);
+                boardGrid[sbi1, sbi2].UpdateMini(idx1, idx2);
 
-                // Resets TableLayoutPanel bg
-                ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.Transparent;
+                // Resets all TableLayoutPanel BGs
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        ((TableLayoutPanel)Controls.Find($"miniGrid{((i + 1) + (j * 3))}", true)[0]).BackColor = Color.Transparent;
+                    }
+                }
 
                 // Updates superBoardIndexes
-                sbi1 = i;
-                sbi2 = j;
+                sbi1 = idx1;
+                sbi2 = idx2;
 
                 // Highlights current TableLayoutPanel
-                ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
+                SetMiniHighlight(miniNum);
             }
         }
 
@@ -142,12 +144,46 @@ namespace StrategicTTT
             return false;
         }
 
+        private bool CheckValidMini(int miniNum)
+        {
+            bool output;
+
+            if (superGrid[sbi1, sbi2] == '\0')
+            {
+                output = (miniNum == (sbi2 + (sbi1 * 3)));
+            }
+            else
+            {
+                output = true;
+            }
+
+            return output;
+        }
+
         private void UpdateWinLabel(int miniNum)
         {
             Panel activePanel = ((Panel)Controls.Find($"Cell{miniNum + 1}", true)[0]);
             Label activeLabel = ((Label)activePanel.Controls.Find($"winLabel{miniNum + 1}", true)[0]);
             activeLabel.Text = Convert.ToString(superGrid[sbi1, sbi2]);
             activeLabel.Visible = true;
+        }
+
+        private void SetMiniHighlight(int miniNum)
+        {
+            if (true)
+            {
+                ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
+            }
+            else
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        ((TableLayoutPanel)Controls.Find($"miniGrid{((i + 1) + (j * 3))}", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
+                    }
+                }
+            }
         }
 
         // =-=-=-= END GAME LOGIC METHODS =-=-=-= //
