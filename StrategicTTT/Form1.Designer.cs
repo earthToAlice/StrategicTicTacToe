@@ -28,80 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.player1Label = new System.Windows.Forms.Label();
             this.player2Label = new System.Windows.Forms.Label();
             this.superGridLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.miniGrid9 = new System.Windows.Forms.TableLayoutPanel();
-            this.Mini9Tile9 = new System.Windows.Forms.Label();
-            this.Mini9Tile8 = new System.Windows.Forms.Label();
-            this.Mini9Tile7 = new System.Windows.Forms.Label();
-            this.Mini9Tile6 = new System.Windows.Forms.Label();
-            this.Mini9Tile5 = new System.Windows.Forms.Label();
-            this.Mini9Tile4 = new System.Windows.Forms.Label();
-            this.Mini9Tile3 = new System.Windows.Forms.Label();
-            this.Mini9Tile2 = new System.Windows.Forms.Label();
-            this.Mini9Tile1 = new System.Windows.Forms.Label();
-            this.miniGrid8 = new System.Windows.Forms.TableLayoutPanel();
-            this.Mini8Tile9 = new System.Windows.Forms.Label();
-            this.Mini8Tile8 = new System.Windows.Forms.Label();
-            this.Mini8Tile7 = new System.Windows.Forms.Label();
-            this.Mini8Tile6 = new System.Windows.Forms.Label();
-            this.Mini8Tile5 = new System.Windows.Forms.Label();
-            this.Mini8Tile4 = new System.Windows.Forms.Label();
-            this.Mini8Tile3 = new System.Windows.Forms.Label();
-            this.Mini8Tile2 = new System.Windows.Forms.Label();
-            this.Mini8Tile1 = new System.Windows.Forms.Label();
-            this.miniGrid7 = new System.Windows.Forms.TableLayoutPanel();
-            this.Mini7Tile9 = new System.Windows.Forms.Label();
-            this.Mini7Tile8 = new System.Windows.Forms.Label();
-            this.Mini7Tile7 = new System.Windows.Forms.Label();
-            this.Mini7Tile6 = new System.Windows.Forms.Label();
-            this.Mini7Tile5 = new System.Windows.Forms.Label();
-            this.Mini7Tile4 = new System.Windows.Forms.Label();
-            this.Mini7Tile3 = new System.Windows.Forms.Label();
-            this.Mini7Tile2 = new System.Windows.Forms.Label();
-            this.Mini7Tile1 = new System.Windows.Forms.Label();
-            this.miniGrid6 = new System.Windows.Forms.TableLayoutPanel();
-            this.Mini6Tile9 = new System.Windows.Forms.Label();
-            this.Mini6Tile8 = new System.Windows.Forms.Label();
-            this.Mini6Tile7 = new System.Windows.Forms.Label();
-            this.Mini6Tile6 = new System.Windows.Forms.Label();
-            this.Mini6Tile5 = new System.Windows.Forms.Label();
-            this.Mini6Tile4 = new System.Windows.Forms.Label();
-            this.Mini6Tile3 = new System.Windows.Forms.Label();
-            this.Mini6Tile2 = new System.Windows.Forms.Label();
-            this.Mini6Tile1 = new System.Windows.Forms.Label();
-            this.miniGrid5 = new System.Windows.Forms.TableLayoutPanel();
-            this.Mini5Tile9 = new System.Windows.Forms.Label();
-            this.Mini5Tile8 = new System.Windows.Forms.Label();
-            this.Mini5Tile7 = new System.Windows.Forms.Label();
-            this.Mini5Tile6 = new System.Windows.Forms.Label();
-            this.Mini5Tile5 = new System.Windows.Forms.Label();
-            this.Mini5Tile4 = new System.Windows.Forms.Label();
-            this.Mini5Tile3 = new System.Windows.Forms.Label();
-            this.Mini5Tile2 = new System.Windows.Forms.Label();
-            this.Mini5Tile1 = new System.Windows.Forms.Label();
-            this.miniGrid4 = new System.Windows.Forms.TableLayoutPanel();
-            this.Mini4Tile9 = new System.Windows.Forms.Label();
-            this.Mini4Tile8 = new System.Windows.Forms.Label();
-            this.Mini4Tile7 = new System.Windows.Forms.Label();
-            this.Mini4Tile6 = new System.Windows.Forms.Label();
-            this.Mini4Tile5 = new System.Windows.Forms.Label();
-            this.Mini4Tile4 = new System.Windows.Forms.Label();
-            this.Mini4Tile3 = new System.Windows.Forms.Label();
-            this.Mini4Tile2 = new System.Windows.Forms.Label();
-            this.Mini4Tile1 = new System.Windows.Forms.Label();
-            this.miniGrid3 = new System.Windows.Forms.TableLayoutPanel();
-            this.Mini3Tile9 = new System.Windows.Forms.Label();
-            this.Mini3Tile8 = new System.Windows.Forms.Label();
-            this.Mini3Tile7 = new System.Windows.Forms.Label();
-            this.Mini3Tile6 = new System.Windows.Forms.Label();
-            this.Mini3Tile5 = new System.Windows.Forms.Label();
-            this.Mini3Tile4 = new System.Windows.Forms.Label();
-            this.Mini3Tile3 = new System.Windows.Forms.Label();
-            this.Mini3Tile2 = new System.Windows.Forms.Label();
-            this.Mini3Tile1 = new System.Windows.Forms.Label();
+            this.Cell2 = new System.Windows.Forms.Panel();
+            this.winLabel2 = new System.Windows.Forms.Label();
             this.miniGrid2 = new System.Windows.Forms.TableLayoutPanel();
             this.Mini2Tile9 = new System.Windows.Forms.Label();
             this.Mini2Tile8 = new System.Windows.Forms.Label();
@@ -112,6 +45,8 @@
             this.Mini2Tile3 = new System.Windows.Forms.Label();
             this.Mini2Tile2 = new System.Windows.Forms.Label();
             this.Mini2Tile1 = new System.Windows.Forms.Label();
+            this.Cell1 = new System.Windows.Forms.Panel();
+            this.winLabel1 = new System.Windows.Forms.Label();
             this.miniGrid1 = new System.Windows.Forms.TableLayoutPanel();
             this.Mini1Tile9 = new System.Windows.Forms.Label();
             this.Mini1Tile8 = new System.Windows.Forms.Label();
@@ -122,44 +57,110 @@
             this.Mini1Tile3 = new System.Windows.Forms.Label();
             this.Mini1Tile2 = new System.Windows.Forms.Label();
             this.Mini1Tile1 = new System.Windows.Forms.Label();
-            this.Cell2 = new System.Windows.Forms.Panel();
-            this.Cell1 = new System.Windows.Forms.Panel();
             this.Cell3 = new System.Windows.Forms.Panel();
-            this.Cell4 = new System.Windows.Forms.Panel();
-            this.Cell5 = new System.Windows.Forms.Panel();
-            this.Cell6 = new System.Windows.Forms.Panel();
-            this.Cell7 = new System.Windows.Forms.Panel();
-            this.Cell8 = new System.Windows.Forms.Panel();
-            this.Cell9 = new System.Windows.Forms.Panel();
-            this.winLabel1 = new System.Windows.Forms.Label();
-            this.winLabel2 = new System.Windows.Forms.Label();
             this.winLabel3 = new System.Windows.Forms.Label();
+            this.miniGrid3 = new System.Windows.Forms.TableLayoutPanel();
+            this.Mini3Tile9 = new System.Windows.Forms.Label();
+            this.Mini3Tile8 = new System.Windows.Forms.Label();
+            this.Mini3Tile7 = new System.Windows.Forms.Label();
+            this.Mini3Tile6 = new System.Windows.Forms.Label();
+            this.Mini3Tile5 = new System.Windows.Forms.Label();
+            this.Mini3Tile4 = new System.Windows.Forms.Label();
+            this.Mini3Tile3 = new System.Windows.Forms.Label();
+            this.Mini3Tile2 = new System.Windows.Forms.Label();
+            this.Mini3Tile1 = new System.Windows.Forms.Label();
+            this.Cell4 = new System.Windows.Forms.Panel();
             this.winLabel4 = new System.Windows.Forms.Label();
+            this.miniGrid4 = new System.Windows.Forms.TableLayoutPanel();
+            this.Mini4Tile9 = new System.Windows.Forms.Label();
+            this.Mini4Tile8 = new System.Windows.Forms.Label();
+            this.Mini4Tile7 = new System.Windows.Forms.Label();
+            this.Mini4Tile6 = new System.Windows.Forms.Label();
+            this.Mini4Tile5 = new System.Windows.Forms.Label();
+            this.Mini4Tile4 = new System.Windows.Forms.Label();
+            this.Mini4Tile3 = new System.Windows.Forms.Label();
+            this.Mini4Tile2 = new System.Windows.Forms.Label();
+            this.Mini4Tile1 = new System.Windows.Forms.Label();
+            this.Cell5 = new System.Windows.Forms.Panel();
             this.winLabel5 = new System.Windows.Forms.Label();
+            this.miniGrid5 = new System.Windows.Forms.TableLayoutPanel();
+            this.Mini5Tile9 = new System.Windows.Forms.Label();
+            this.Mini5Tile8 = new System.Windows.Forms.Label();
+            this.Mini5Tile7 = new System.Windows.Forms.Label();
+            this.Mini5Tile6 = new System.Windows.Forms.Label();
+            this.Mini5Tile5 = new System.Windows.Forms.Label();
+            this.Mini5Tile4 = new System.Windows.Forms.Label();
+            this.Mini5Tile3 = new System.Windows.Forms.Label();
+            this.Mini5Tile2 = new System.Windows.Forms.Label();
+            this.Mini5Tile1 = new System.Windows.Forms.Label();
+            this.Cell6 = new System.Windows.Forms.Panel();
             this.winLabel6 = new System.Windows.Forms.Label();
+            this.miniGrid6 = new System.Windows.Forms.TableLayoutPanel();
+            this.Mini6Tile9 = new System.Windows.Forms.Label();
+            this.Mini6Tile8 = new System.Windows.Forms.Label();
+            this.Mini6Tile7 = new System.Windows.Forms.Label();
+            this.Mini6Tile6 = new System.Windows.Forms.Label();
+            this.Mini6Tile5 = new System.Windows.Forms.Label();
+            this.Mini6Tile4 = new System.Windows.Forms.Label();
+            this.Mini6Tile3 = new System.Windows.Forms.Label();
+            this.Mini6Tile2 = new System.Windows.Forms.Label();
+            this.Mini6Tile1 = new System.Windows.Forms.Label();
+            this.Cell7 = new System.Windows.Forms.Panel();
             this.winLabel7 = new System.Windows.Forms.Label();
+            this.miniGrid7 = new System.Windows.Forms.TableLayoutPanel();
+            this.Mini7Tile9 = new System.Windows.Forms.Label();
+            this.Mini7Tile8 = new System.Windows.Forms.Label();
+            this.Mini7Tile7 = new System.Windows.Forms.Label();
+            this.Mini7Tile6 = new System.Windows.Forms.Label();
+            this.Mini7Tile5 = new System.Windows.Forms.Label();
+            this.Mini7Tile4 = new System.Windows.Forms.Label();
+            this.Mini7Tile3 = new System.Windows.Forms.Label();
+            this.Mini7Tile2 = new System.Windows.Forms.Label();
+            this.Mini7Tile1 = new System.Windows.Forms.Label();
+            this.Cell8 = new System.Windows.Forms.Panel();
             this.winLabel8 = new System.Windows.Forms.Label();
+            this.miniGrid8 = new System.Windows.Forms.TableLayoutPanel();
+            this.Mini8Tile9 = new System.Windows.Forms.Label();
+            this.Mini8Tile8 = new System.Windows.Forms.Label();
+            this.Mini8Tile7 = new System.Windows.Forms.Label();
+            this.Mini8Tile6 = new System.Windows.Forms.Label();
+            this.Mini8Tile5 = new System.Windows.Forms.Label();
+            this.Mini8Tile4 = new System.Windows.Forms.Label();
+            this.Mini8Tile3 = new System.Windows.Forms.Label();
+            this.Mini8Tile2 = new System.Windows.Forms.Label();
+            this.Mini8Tile1 = new System.Windows.Forms.Label();
+            this.Cell9 = new System.Windows.Forms.Panel();
             this.winLabel9 = new System.Windows.Forms.Label();
+            this.miniGrid9 = new System.Windows.Forms.TableLayoutPanel();
+            this.Mini9Tile9 = new System.Windows.Forms.Label();
+            this.Mini9Tile8 = new System.Windows.Forms.Label();
+            this.Mini9Tile7 = new System.Windows.Forms.Label();
+            this.Mini9Tile6 = new System.Windows.Forms.Label();
+            this.Mini9Tile5 = new System.Windows.Forms.Label();
+            this.Mini9Tile4 = new System.Windows.Forms.Label();
+            this.Mini9Tile3 = new System.Windows.Forms.Label();
+            this.Mini9Tile2 = new System.Windows.Forms.Label();
+            this.Mini9Tile1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.superGridLayout.SuspendLayout();
-            this.miniGrid9.SuspendLayout();
-            this.miniGrid8.SuspendLayout();
-            this.miniGrid7.SuspendLayout();
-            this.miniGrid6.SuspendLayout();
-            this.miniGrid5.SuspendLayout();
-            this.miniGrid4.SuspendLayout();
-            this.miniGrid3.SuspendLayout();
-            this.miniGrid2.SuspendLayout();
-            this.miniGrid1.SuspendLayout();
             this.Cell2.SuspendLayout();
+            this.miniGrid2.SuspendLayout();
             this.Cell1.SuspendLayout();
+            this.miniGrid1.SuspendLayout();
             this.Cell3.SuspendLayout();
+            this.miniGrid3.SuspendLayout();
             this.Cell4.SuspendLayout();
+            this.miniGrid4.SuspendLayout();
             this.Cell5.SuspendLayout();
+            this.miniGrid5.SuspendLayout();
             this.Cell6.SuspendLayout();
+            this.miniGrid6.SuspendLayout();
             this.Cell7.SuspendLayout();
+            this.miniGrid7.SuspendLayout();
             this.Cell8.SuspendLayout();
+            this.miniGrid8.SuspendLayout();
             this.Cell9.SuspendLayout();
+            this.miniGrid9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -236,873 +237,29 @@
             this.superGridLayout.Size = new System.Drawing.Size(430, 430);
             this.superGridLayout.TabIndex = 3;
             // 
-            // miniGrid9
-            // 
-            this.miniGrid9.ColumnCount = 3;
-            this.miniGrid9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid9.Controls.Add(this.Mini9Tile9, 2, 2);
-            this.miniGrid9.Controls.Add(this.Mini9Tile8, 1, 2);
-            this.miniGrid9.Controls.Add(this.Mini9Tile7, 0, 2);
-            this.miniGrid9.Controls.Add(this.Mini9Tile6, 2, 1);
-            this.miniGrid9.Controls.Add(this.Mini9Tile5, 1, 1);
-            this.miniGrid9.Controls.Add(this.Mini9Tile4, 0, 1);
-            this.miniGrid9.Controls.Add(this.Mini9Tile3, 2, 0);
-            this.miniGrid9.Controls.Add(this.Mini9Tile2, 1, 0);
-            this.miniGrid9.Controls.Add(this.Mini9Tile1, 0, 0);
-            this.miniGrid9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid9.Location = new System.Drawing.Point(0, 0);
-            this.miniGrid9.Name = "miniGrid9";
-            this.miniGrid9.RowCount = 3;
-            this.miniGrid9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid9.Size = new System.Drawing.Size(136, 137);
-            this.miniGrid9.TabIndex = 8;
-            // 
-            // Mini9Tile9
-            // 
-            this.Mini9Tile9.AutoSize = true;
-            this.Mini9Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile9.Location = new System.Drawing.Point(93, 90);
-            this.Mini9Tile9.Name = "Mini9Tile9";
-            this.Mini9Tile9.Size = new System.Drawing.Size(40, 47);
-            this.Mini9Tile9.TabIndex = 8;
-            this.Mini9Tile9.Text = "Mini9Tile9";
-            this.Mini9Tile9.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile8
-            // 
-            this.Mini9Tile8.AutoSize = true;
-            this.Mini9Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile8.Location = new System.Drawing.Point(48, 90);
-            this.Mini9Tile8.Name = "Mini9Tile8";
-            this.Mini9Tile8.Size = new System.Drawing.Size(39, 47);
-            this.Mini9Tile8.TabIndex = 7;
-            this.Mini9Tile8.Text = "Mini9Tile8";
-            this.Mini9Tile8.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile7
-            // 
-            this.Mini9Tile7.AutoSize = true;
-            this.Mini9Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile7.Location = new System.Drawing.Point(3, 90);
-            this.Mini9Tile7.Name = "Mini9Tile7";
-            this.Mini9Tile7.Size = new System.Drawing.Size(39, 47);
-            this.Mini9Tile7.TabIndex = 6;
-            this.Mini9Tile7.Text = "Mini9Tile7";
-            this.Mini9Tile7.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile6
-            // 
-            this.Mini9Tile6.AutoSize = true;
-            this.Mini9Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile6.Location = new System.Drawing.Point(93, 45);
-            this.Mini9Tile6.Name = "Mini9Tile6";
-            this.Mini9Tile6.Size = new System.Drawing.Size(40, 45);
-            this.Mini9Tile6.TabIndex = 5;
-            this.Mini9Tile6.Text = "Mini9Tile6";
-            this.Mini9Tile6.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile5
-            // 
-            this.Mini9Tile5.AutoSize = true;
-            this.Mini9Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile5.Location = new System.Drawing.Point(48, 45);
-            this.Mini9Tile5.Name = "Mini9Tile5";
-            this.Mini9Tile5.Size = new System.Drawing.Size(39, 45);
-            this.Mini9Tile5.TabIndex = 4;
-            this.Mini9Tile5.Text = "Mini9Tile5";
-            this.Mini9Tile5.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile4
-            // 
-            this.Mini9Tile4.AutoSize = true;
-            this.Mini9Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile4.Location = new System.Drawing.Point(3, 45);
-            this.Mini9Tile4.Name = "Mini9Tile4";
-            this.Mini9Tile4.Size = new System.Drawing.Size(39, 45);
-            this.Mini9Tile4.TabIndex = 3;
-            this.Mini9Tile4.Text = "Mini9Tile4";
-            this.Mini9Tile4.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile3
-            // 
-            this.Mini9Tile3.AutoSize = true;
-            this.Mini9Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile3.Location = new System.Drawing.Point(93, 0);
-            this.Mini9Tile3.Name = "Mini9Tile3";
-            this.Mini9Tile3.Size = new System.Drawing.Size(40, 45);
-            this.Mini9Tile3.TabIndex = 2;
-            this.Mini9Tile3.Text = "Mini9Tile3";
-            this.Mini9Tile3.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile2
-            // 
-            this.Mini9Tile2.AutoSize = true;
-            this.Mini9Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile2.Location = new System.Drawing.Point(48, 0);
-            this.Mini9Tile2.Name = "Mini9Tile2";
-            this.Mini9Tile2.Size = new System.Drawing.Size(39, 45);
-            this.Mini9Tile2.TabIndex = 1;
-            this.Mini9Tile2.Text = "Mini9Tile2";
-            this.Mini9Tile2.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini9Tile1
-            // 
-            this.Mini9Tile1.AutoSize = true;
-            this.Mini9Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini9Tile1.Location = new System.Drawing.Point(3, 0);
-            this.Mini9Tile1.Name = "Mini9Tile1";
-            this.Mini9Tile1.Size = new System.Drawing.Size(39, 45);
-            this.Mini9Tile1.TabIndex = 0;
-            this.Mini9Tile1.Text = "Mini9Tile1";
-            this.Mini9Tile1.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // miniGrid8
-            // 
-            this.miniGrid8.ColumnCount = 3;
-            this.miniGrid8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid8.Controls.Add(this.Mini8Tile9, 2, 2);
-            this.miniGrid8.Controls.Add(this.Mini8Tile8, 1, 2);
-            this.miniGrid8.Controls.Add(this.Mini8Tile7, 0, 2);
-            this.miniGrid8.Controls.Add(this.Mini8Tile6, 2, 1);
-            this.miniGrid8.Controls.Add(this.Mini8Tile5, 1, 1);
-            this.miniGrid8.Controls.Add(this.Mini8Tile4, 0, 1);
-            this.miniGrid8.Controls.Add(this.Mini8Tile3, 2, 0);
-            this.miniGrid8.Controls.Add(this.Mini8Tile2, 1, 0);
-            this.miniGrid8.Controls.Add(this.Mini8Tile1, 0, 0);
-            this.miniGrid8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid8.Location = new System.Drawing.Point(0, 0);
-            this.miniGrid8.Name = "miniGrid8";
-            this.miniGrid8.RowCount = 3;
-            this.miniGrid8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid8.Size = new System.Drawing.Size(136, 137);
-            this.miniGrid8.TabIndex = 7;
-            // 
-            // Mini8Tile9
-            // 
-            this.Mini8Tile9.AutoSize = true;
-            this.Mini8Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile9.Location = new System.Drawing.Point(93, 90);
-            this.Mini8Tile9.Name = "Mini8Tile9";
-            this.Mini8Tile9.Size = new System.Drawing.Size(40, 47);
-            this.Mini8Tile9.TabIndex = 8;
-            this.Mini8Tile9.Text = "Mini8Tile9";
-            this.Mini8Tile9.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile8
-            // 
-            this.Mini8Tile8.AutoSize = true;
-            this.Mini8Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile8.Location = new System.Drawing.Point(48, 90);
-            this.Mini8Tile8.Name = "Mini8Tile8";
-            this.Mini8Tile8.Size = new System.Drawing.Size(39, 47);
-            this.Mini8Tile8.TabIndex = 7;
-            this.Mini8Tile8.Text = "Mini8Tile8";
-            this.Mini8Tile8.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile7
-            // 
-            this.Mini8Tile7.AutoSize = true;
-            this.Mini8Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile7.Location = new System.Drawing.Point(3, 90);
-            this.Mini8Tile7.Name = "Mini8Tile7";
-            this.Mini8Tile7.Size = new System.Drawing.Size(39, 47);
-            this.Mini8Tile7.TabIndex = 6;
-            this.Mini8Tile7.Text = "Mini8Tile7";
-            this.Mini8Tile7.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile6
-            // 
-            this.Mini8Tile6.AutoSize = true;
-            this.Mini8Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile6.Location = new System.Drawing.Point(93, 45);
-            this.Mini8Tile6.Name = "Mini8Tile6";
-            this.Mini8Tile6.Size = new System.Drawing.Size(40, 45);
-            this.Mini8Tile6.TabIndex = 5;
-            this.Mini8Tile6.Text = "Mini8Tile6";
-            this.Mini8Tile6.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile5
-            // 
-            this.Mini8Tile5.AutoSize = true;
-            this.Mini8Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile5.Location = new System.Drawing.Point(48, 45);
-            this.Mini8Tile5.Name = "Mini8Tile5";
-            this.Mini8Tile5.Size = new System.Drawing.Size(39, 45);
-            this.Mini8Tile5.TabIndex = 4;
-            this.Mini8Tile5.Text = "Mini8Tile5";
-            this.Mini8Tile5.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile4
-            // 
-            this.Mini8Tile4.AutoSize = true;
-            this.Mini8Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile4.Location = new System.Drawing.Point(3, 45);
-            this.Mini8Tile4.Name = "Mini8Tile4";
-            this.Mini8Tile4.Size = new System.Drawing.Size(39, 45);
-            this.Mini8Tile4.TabIndex = 3;
-            this.Mini8Tile4.Text = "Mini8Tile4";
-            this.Mini8Tile4.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile3
-            // 
-            this.Mini8Tile3.AutoSize = true;
-            this.Mini8Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile3.Location = new System.Drawing.Point(93, 0);
-            this.Mini8Tile3.Name = "Mini8Tile3";
-            this.Mini8Tile3.Size = new System.Drawing.Size(40, 45);
-            this.Mini8Tile3.TabIndex = 2;
-            this.Mini8Tile3.Text = "Mini8Tile3";
-            this.Mini8Tile3.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile2
-            // 
-            this.Mini8Tile2.AutoSize = true;
-            this.Mini8Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile2.Location = new System.Drawing.Point(48, 0);
-            this.Mini8Tile2.Name = "Mini8Tile2";
-            this.Mini8Tile2.Size = new System.Drawing.Size(39, 45);
-            this.Mini8Tile2.TabIndex = 1;
-            this.Mini8Tile2.Text = "Mini8Tile2";
-            this.Mini8Tile2.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini8Tile1
-            // 
-            this.Mini8Tile1.AutoSize = true;
-            this.Mini8Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini8Tile1.Location = new System.Drawing.Point(3, 0);
-            this.Mini8Tile1.Name = "Mini8Tile1";
-            this.Mini8Tile1.Size = new System.Drawing.Size(39, 45);
-            this.Mini8Tile1.TabIndex = 0;
-            this.Mini8Tile1.Text = "Mini8Tile1";
-            this.Mini8Tile1.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // miniGrid7
-            // 
-            this.miniGrid7.ColumnCount = 3;
-            this.miniGrid7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid7.Controls.Add(this.Mini7Tile9, 2, 2);
-            this.miniGrid7.Controls.Add(this.Mini7Tile8, 1, 2);
-            this.miniGrid7.Controls.Add(this.Mini7Tile7, 0, 2);
-            this.miniGrid7.Controls.Add(this.Mini7Tile6, 2, 1);
-            this.miniGrid7.Controls.Add(this.Mini7Tile5, 1, 1);
-            this.miniGrid7.Controls.Add(this.Mini7Tile4, 0, 1);
-            this.miniGrid7.Controls.Add(this.Mini7Tile3, 2, 0);
-            this.miniGrid7.Controls.Add(this.Mini7Tile2, 1, 0);
-            this.miniGrid7.Controls.Add(this.Mini7Tile1, 0, 0);
-            this.miniGrid7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid7.Location = new System.Drawing.Point(0, 0);
-            this.miniGrid7.Name = "miniGrid7";
-            this.miniGrid7.RowCount = 3;
-            this.miniGrid7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid7.Size = new System.Drawing.Size(136, 137);
-            this.miniGrid7.TabIndex = 6;
-            // 
-            // Mini7Tile9
-            // 
-            this.Mini7Tile9.AutoSize = true;
-            this.Mini7Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile9.Location = new System.Drawing.Point(93, 90);
-            this.Mini7Tile9.Name = "Mini7Tile9";
-            this.Mini7Tile9.Size = new System.Drawing.Size(40, 47);
-            this.Mini7Tile9.TabIndex = 8;
-            this.Mini7Tile9.Text = "Mini7Tile9";
-            this.Mini7Tile9.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile8
-            // 
-            this.Mini7Tile8.AutoSize = true;
-            this.Mini7Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile8.Location = new System.Drawing.Point(48, 90);
-            this.Mini7Tile8.Name = "Mini7Tile8";
-            this.Mini7Tile8.Size = new System.Drawing.Size(39, 47);
-            this.Mini7Tile8.TabIndex = 7;
-            this.Mini7Tile8.Text = "Mini7Tile8";
-            this.Mini7Tile8.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile7
-            // 
-            this.Mini7Tile7.AutoSize = true;
-            this.Mini7Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile7.Location = new System.Drawing.Point(3, 90);
-            this.Mini7Tile7.Name = "Mini7Tile7";
-            this.Mini7Tile7.Size = new System.Drawing.Size(39, 47);
-            this.Mini7Tile7.TabIndex = 6;
-            this.Mini7Tile7.Text = "Mini7Tile7";
-            this.Mini7Tile7.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile6
-            // 
-            this.Mini7Tile6.AutoSize = true;
-            this.Mini7Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile6.Location = new System.Drawing.Point(93, 45);
-            this.Mini7Tile6.Name = "Mini7Tile6";
-            this.Mini7Tile6.Size = new System.Drawing.Size(40, 45);
-            this.Mini7Tile6.TabIndex = 5;
-            this.Mini7Tile6.Text = "Mini7Tile6";
-            this.Mini7Tile6.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile5
-            // 
-            this.Mini7Tile5.AutoSize = true;
-            this.Mini7Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile5.Location = new System.Drawing.Point(48, 45);
-            this.Mini7Tile5.Name = "Mini7Tile5";
-            this.Mini7Tile5.Size = new System.Drawing.Size(39, 45);
-            this.Mini7Tile5.TabIndex = 4;
-            this.Mini7Tile5.Text = "Mini7Tile5";
-            this.Mini7Tile5.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile4
-            // 
-            this.Mini7Tile4.AutoSize = true;
-            this.Mini7Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile4.Location = new System.Drawing.Point(3, 45);
-            this.Mini7Tile4.Name = "Mini7Tile4";
-            this.Mini7Tile4.Size = new System.Drawing.Size(39, 45);
-            this.Mini7Tile4.TabIndex = 3;
-            this.Mini7Tile4.Text = "Mini7Tile4";
-            this.Mini7Tile4.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile3
-            // 
-            this.Mini7Tile3.AutoSize = true;
-            this.Mini7Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile3.Location = new System.Drawing.Point(93, 0);
-            this.Mini7Tile3.Name = "Mini7Tile3";
-            this.Mini7Tile3.Size = new System.Drawing.Size(40, 45);
-            this.Mini7Tile3.TabIndex = 2;
-            this.Mini7Tile3.Text = "Mini7Tile3";
-            this.Mini7Tile3.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile2
-            // 
-            this.Mini7Tile2.AutoSize = true;
-            this.Mini7Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile2.Location = new System.Drawing.Point(48, 0);
-            this.Mini7Tile2.Name = "Mini7Tile2";
-            this.Mini7Tile2.Size = new System.Drawing.Size(39, 45);
-            this.Mini7Tile2.TabIndex = 1;
-            this.Mini7Tile2.Text = "Mini7Tile2";
-            this.Mini7Tile2.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini7Tile1
-            // 
-            this.Mini7Tile1.AutoSize = true;
-            this.Mini7Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini7Tile1.Location = new System.Drawing.Point(3, 0);
-            this.Mini7Tile1.Name = "Mini7Tile1";
-            this.Mini7Tile1.Size = new System.Drawing.Size(39, 45);
-            this.Mini7Tile1.TabIndex = 0;
-            this.Mini7Tile1.Text = "Mini7Tile1";
-            this.Mini7Tile1.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // miniGrid6
-            // 
-            this.miniGrid6.ColumnCount = 3;
-            this.miniGrid6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid6.Controls.Add(this.Mini6Tile9, 2, 2);
-            this.miniGrid6.Controls.Add(this.Mini6Tile8, 1, 2);
-            this.miniGrid6.Controls.Add(this.Mini6Tile7, 0, 2);
-            this.miniGrid6.Controls.Add(this.Mini6Tile6, 2, 1);
-            this.miniGrid6.Controls.Add(this.Mini6Tile5, 1, 1);
-            this.miniGrid6.Controls.Add(this.Mini6Tile4, 0, 1);
-            this.miniGrid6.Controls.Add(this.Mini6Tile3, 2, 0);
-            this.miniGrid6.Controls.Add(this.Mini6Tile2, 1, 0);
-            this.miniGrid6.Controls.Add(this.Mini6Tile1, 0, 0);
-            this.miniGrid6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid6.Location = new System.Drawing.Point(0, 0);
-            this.miniGrid6.Name = "miniGrid6";
-            this.miniGrid6.RowCount = 3;
-            this.miniGrid6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid6.Size = new System.Drawing.Size(136, 135);
-            this.miniGrid6.TabIndex = 5;
-            // 
-            // Mini6Tile9
-            // 
-            this.Mini6Tile9.AutoSize = true;
-            this.Mini6Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile9.Location = new System.Drawing.Point(93, 90);
-            this.Mini6Tile9.Name = "Mini6Tile9";
-            this.Mini6Tile9.Size = new System.Drawing.Size(40, 45);
-            this.Mini6Tile9.TabIndex = 8;
-            this.Mini6Tile9.Text = "Mini6Tile9";
-            this.Mini6Tile9.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile8
-            // 
-            this.Mini6Tile8.AutoSize = true;
-            this.Mini6Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile8.Location = new System.Drawing.Point(48, 90);
-            this.Mini6Tile8.Name = "Mini6Tile8";
-            this.Mini6Tile8.Size = new System.Drawing.Size(39, 45);
-            this.Mini6Tile8.TabIndex = 7;
-            this.Mini6Tile8.Text = "Mini6Tile8";
-            this.Mini6Tile8.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile7
-            // 
-            this.Mini6Tile7.AutoSize = true;
-            this.Mini6Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile7.Location = new System.Drawing.Point(3, 90);
-            this.Mini6Tile7.Name = "Mini6Tile7";
-            this.Mini6Tile7.Size = new System.Drawing.Size(39, 45);
-            this.Mini6Tile7.TabIndex = 6;
-            this.Mini6Tile7.Text = "Mini6Tile7";
-            this.Mini6Tile7.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile6
-            // 
-            this.Mini6Tile6.AutoSize = true;
-            this.Mini6Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile6.Location = new System.Drawing.Point(93, 45);
-            this.Mini6Tile6.Name = "Mini6Tile6";
-            this.Mini6Tile6.Size = new System.Drawing.Size(40, 45);
-            this.Mini6Tile6.TabIndex = 5;
-            this.Mini6Tile6.Text = "Mini6Tile6";
-            this.Mini6Tile6.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile5
-            // 
-            this.Mini6Tile5.AutoSize = true;
-            this.Mini6Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile5.Location = new System.Drawing.Point(48, 45);
-            this.Mini6Tile5.Name = "Mini6Tile5";
-            this.Mini6Tile5.Size = new System.Drawing.Size(39, 45);
-            this.Mini6Tile5.TabIndex = 4;
-            this.Mini6Tile5.Text = "Mini6Tile5";
-            this.Mini6Tile5.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile4
-            // 
-            this.Mini6Tile4.AutoSize = true;
-            this.Mini6Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile4.Location = new System.Drawing.Point(3, 45);
-            this.Mini6Tile4.Name = "Mini6Tile4";
-            this.Mini6Tile4.Size = new System.Drawing.Size(39, 45);
-            this.Mini6Tile4.TabIndex = 3;
-            this.Mini6Tile4.Text = "Mini6Tile4";
-            this.Mini6Tile4.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile3
-            // 
-            this.Mini6Tile3.AutoSize = true;
-            this.Mini6Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile3.Location = new System.Drawing.Point(93, 0);
-            this.Mini6Tile3.Name = "Mini6Tile3";
-            this.Mini6Tile3.Size = new System.Drawing.Size(40, 45);
-            this.Mini6Tile3.TabIndex = 2;
-            this.Mini6Tile3.Text = "Mini6Tile3";
-            this.Mini6Tile3.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile2
-            // 
-            this.Mini6Tile2.AutoSize = true;
-            this.Mini6Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile2.Location = new System.Drawing.Point(48, 0);
-            this.Mini6Tile2.Name = "Mini6Tile2";
-            this.Mini6Tile2.Size = new System.Drawing.Size(39, 45);
-            this.Mini6Tile2.TabIndex = 1;
-            this.Mini6Tile2.Text = "Mini6Tile2";
-            this.Mini6Tile2.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini6Tile1
-            // 
-            this.Mini6Tile1.AutoSize = true;
-            this.Mini6Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini6Tile1.Location = new System.Drawing.Point(3, 0);
-            this.Mini6Tile1.Name = "Mini6Tile1";
-            this.Mini6Tile1.Size = new System.Drawing.Size(39, 45);
-            this.Mini6Tile1.TabIndex = 0;
-            this.Mini6Tile1.Text = "Mini6Tile1";
-            this.Mini6Tile1.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // miniGrid5
-            // 
-            this.miniGrid5.ColumnCount = 3;
-            this.miniGrid5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid5.Controls.Add(this.Mini5Tile9, 2, 2);
-            this.miniGrid5.Controls.Add(this.Mini5Tile8, 1, 2);
-            this.miniGrid5.Controls.Add(this.Mini5Tile7, 0, 2);
-            this.miniGrid5.Controls.Add(this.Mini5Tile6, 2, 1);
-            this.miniGrid5.Controls.Add(this.Mini5Tile5, 1, 1);
-            this.miniGrid5.Controls.Add(this.Mini5Tile4, 0, 1);
-            this.miniGrid5.Controls.Add(this.Mini5Tile3, 2, 0);
-            this.miniGrid5.Controls.Add(this.Mini5Tile2, 1, 0);
-            this.miniGrid5.Controls.Add(this.Mini5Tile1, 0, 0);
-            this.miniGrid5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid5.Location = new System.Drawing.Point(0, 0);
-            this.miniGrid5.Name = "miniGrid5";
-            this.miniGrid5.RowCount = 3;
-            this.miniGrid5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid5.Size = new System.Drawing.Size(136, 135);
-            this.miniGrid5.TabIndex = 4;
-            // 
-            // Mini5Tile9
-            // 
-            this.Mini5Tile9.AutoSize = true;
-            this.Mini5Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile9.Location = new System.Drawing.Point(93, 90);
-            this.Mini5Tile9.Name = "Mini5Tile9";
-            this.Mini5Tile9.Size = new System.Drawing.Size(40, 45);
-            this.Mini5Tile9.TabIndex = 8;
-            this.Mini5Tile9.Text = "Mini5Tile9";
-            this.Mini5Tile9.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile8
-            // 
-            this.Mini5Tile8.AutoSize = true;
-            this.Mini5Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile8.Location = new System.Drawing.Point(48, 90);
-            this.Mini5Tile8.Name = "Mini5Tile8";
-            this.Mini5Tile8.Size = new System.Drawing.Size(39, 45);
-            this.Mini5Tile8.TabIndex = 7;
-            this.Mini5Tile8.Text = "Mini5Tile8";
-            this.Mini5Tile8.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile7
-            // 
-            this.Mini5Tile7.AutoSize = true;
-            this.Mini5Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile7.Location = new System.Drawing.Point(3, 90);
-            this.Mini5Tile7.Name = "Mini5Tile7";
-            this.Mini5Tile7.Size = new System.Drawing.Size(39, 45);
-            this.Mini5Tile7.TabIndex = 6;
-            this.Mini5Tile7.Text = "Mini5Tile7";
-            this.Mini5Tile7.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile6
-            // 
-            this.Mini5Tile6.AutoSize = true;
-            this.Mini5Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile6.Location = new System.Drawing.Point(93, 45);
-            this.Mini5Tile6.Name = "Mini5Tile6";
-            this.Mini5Tile6.Size = new System.Drawing.Size(40, 45);
-            this.Mini5Tile6.TabIndex = 5;
-            this.Mini5Tile6.Text = "Mini5Tile6";
-            this.Mini5Tile6.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile5
-            // 
-            this.Mini5Tile5.AutoSize = true;
-            this.Mini5Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile5.Location = new System.Drawing.Point(48, 45);
-            this.Mini5Tile5.Name = "Mini5Tile5";
-            this.Mini5Tile5.Size = new System.Drawing.Size(39, 45);
-            this.Mini5Tile5.TabIndex = 4;
-            this.Mini5Tile5.Text = "Mini5Tile5";
-            this.Mini5Tile5.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile4
-            // 
-            this.Mini5Tile4.AutoSize = true;
-            this.Mini5Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile4.Location = new System.Drawing.Point(3, 45);
-            this.Mini5Tile4.Name = "Mini5Tile4";
-            this.Mini5Tile4.Size = new System.Drawing.Size(39, 45);
-            this.Mini5Tile4.TabIndex = 3;
-            this.Mini5Tile4.Text = "Mini5Tile4";
-            this.Mini5Tile4.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile3
-            // 
-            this.Mini5Tile3.AutoSize = true;
-            this.Mini5Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile3.Location = new System.Drawing.Point(93, 0);
-            this.Mini5Tile3.Name = "Mini5Tile3";
-            this.Mini5Tile3.Size = new System.Drawing.Size(40, 45);
-            this.Mini5Tile3.TabIndex = 2;
-            this.Mini5Tile3.Text = "Mini5Tile3";
-            this.Mini5Tile3.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile2
-            // 
-            this.Mini5Tile2.AutoSize = true;
-            this.Mini5Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile2.Location = new System.Drawing.Point(48, 0);
-            this.Mini5Tile2.Name = "Mini5Tile2";
-            this.Mini5Tile2.Size = new System.Drawing.Size(39, 45);
-            this.Mini5Tile2.TabIndex = 1;
-            this.Mini5Tile2.Text = "Mini5Tile2";
-            this.Mini5Tile2.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini5Tile1
-            // 
-            this.Mini5Tile1.AutoSize = true;
-            this.Mini5Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini5Tile1.Location = new System.Drawing.Point(3, 0);
-            this.Mini5Tile1.Name = "Mini5Tile1";
-            this.Mini5Tile1.Size = new System.Drawing.Size(39, 45);
-            this.Mini5Tile1.TabIndex = 0;
-            this.Mini5Tile1.Text = "Mini5Tile1";
-            this.Mini5Tile1.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // miniGrid4
-            // 
-            this.miniGrid4.ColumnCount = 3;
-            this.miniGrid4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid4.Controls.Add(this.Mini4Tile9, 2, 2);
-            this.miniGrid4.Controls.Add(this.Mini4Tile8, 1, 2);
-            this.miniGrid4.Controls.Add(this.Mini4Tile7, 0, 2);
-            this.miniGrid4.Controls.Add(this.Mini4Tile6, 2, 1);
-            this.miniGrid4.Controls.Add(this.Mini4Tile5, 1, 1);
-            this.miniGrid4.Controls.Add(this.Mini4Tile4, 0, 1);
-            this.miniGrid4.Controls.Add(this.Mini4Tile3, 2, 0);
-            this.miniGrid4.Controls.Add(this.Mini4Tile2, 1, 0);
-            this.miniGrid4.Controls.Add(this.Mini4Tile1, 0, 0);
-            this.miniGrid4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid4.Location = new System.Drawing.Point(0, 0);
-            this.miniGrid4.Name = "miniGrid4";
-            this.miniGrid4.RowCount = 3;
-            this.miniGrid4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid4.Size = new System.Drawing.Size(136, 135);
-            this.miniGrid4.TabIndex = 3;
-            // 
-            // Mini4Tile9
-            // 
-            this.Mini4Tile9.AutoSize = true;
-            this.Mini4Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile9.Location = new System.Drawing.Point(93, 90);
-            this.Mini4Tile9.Name = "Mini4Tile9";
-            this.Mini4Tile9.Size = new System.Drawing.Size(40, 45);
-            this.Mini4Tile9.TabIndex = 8;
-            this.Mini4Tile9.Text = "Mini4Tile9";
-            this.Mini4Tile9.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile8
-            // 
-            this.Mini4Tile8.AutoSize = true;
-            this.Mini4Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile8.Location = new System.Drawing.Point(48, 90);
-            this.Mini4Tile8.Name = "Mini4Tile8";
-            this.Mini4Tile8.Size = new System.Drawing.Size(39, 45);
-            this.Mini4Tile8.TabIndex = 7;
-            this.Mini4Tile8.Text = "Mini4Tile8";
-            this.Mini4Tile8.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile7
-            // 
-            this.Mini4Tile7.AutoSize = true;
-            this.Mini4Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile7.Location = new System.Drawing.Point(3, 90);
-            this.Mini4Tile7.Name = "Mini4Tile7";
-            this.Mini4Tile7.Size = new System.Drawing.Size(39, 45);
-            this.Mini4Tile7.TabIndex = 6;
-            this.Mini4Tile7.Text = "Mini4Tile7";
-            this.Mini4Tile7.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile6
-            // 
-            this.Mini4Tile6.AutoSize = true;
-            this.Mini4Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile6.Location = new System.Drawing.Point(93, 45);
-            this.Mini4Tile6.Name = "Mini4Tile6";
-            this.Mini4Tile6.Size = new System.Drawing.Size(40, 45);
-            this.Mini4Tile6.TabIndex = 5;
-            this.Mini4Tile6.Text = "Mini4Tile6";
-            this.Mini4Tile6.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile5
-            // 
-            this.Mini4Tile5.AutoSize = true;
-            this.Mini4Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile5.Location = new System.Drawing.Point(48, 45);
-            this.Mini4Tile5.Name = "Mini4Tile5";
-            this.Mini4Tile5.Size = new System.Drawing.Size(39, 45);
-            this.Mini4Tile5.TabIndex = 4;
-            this.Mini4Tile5.Text = "Mini4Tile5";
-            this.Mini4Tile5.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile4
-            // 
-            this.Mini4Tile4.AutoSize = true;
-            this.Mini4Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile4.Location = new System.Drawing.Point(3, 45);
-            this.Mini4Tile4.Name = "Mini4Tile4";
-            this.Mini4Tile4.Size = new System.Drawing.Size(39, 45);
-            this.Mini4Tile4.TabIndex = 3;
-            this.Mini4Tile4.Text = "Mini4Tile4";
-            this.Mini4Tile4.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile3
-            // 
-            this.Mini4Tile3.AutoSize = true;
-            this.Mini4Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile3.Location = new System.Drawing.Point(93, 0);
-            this.Mini4Tile3.Name = "Mini4Tile3";
-            this.Mini4Tile3.Size = new System.Drawing.Size(40, 45);
-            this.Mini4Tile3.TabIndex = 2;
-            this.Mini4Tile3.Text = "Mini4Tile3";
-            this.Mini4Tile3.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile2
-            // 
-            this.Mini4Tile2.AutoSize = true;
-            this.Mini4Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile2.Location = new System.Drawing.Point(48, 0);
-            this.Mini4Tile2.Name = "Mini4Tile2";
-            this.Mini4Tile2.Size = new System.Drawing.Size(39, 45);
-            this.Mini4Tile2.TabIndex = 1;
-            this.Mini4Tile2.Text = "Mini4Tile2";
-            this.Mini4Tile2.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini4Tile1
-            // 
-            this.Mini4Tile1.AutoSize = true;
-            this.Mini4Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini4Tile1.Location = new System.Drawing.Point(3, 0);
-            this.Mini4Tile1.Name = "Mini4Tile1";
-            this.Mini4Tile1.Size = new System.Drawing.Size(39, 45);
-            this.Mini4Tile1.TabIndex = 0;
-            this.Mini4Tile1.Text = "Mini4Tile1";
-            this.Mini4Tile1.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // miniGrid3
-            // 
-            this.miniGrid3.ColumnCount = 3;
-            this.miniGrid3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid3.Controls.Add(this.Mini3Tile9, 2, 2);
-            this.miniGrid3.Controls.Add(this.Mini3Tile8, 1, 2);
-            this.miniGrid3.Controls.Add(this.Mini3Tile7, 0, 2);
-            this.miniGrid3.Controls.Add(this.Mini3Tile6, 2, 1);
-            this.miniGrid3.Controls.Add(this.Mini3Tile5, 1, 1);
-            this.miniGrid3.Controls.Add(this.Mini3Tile4, 0, 1);
-            this.miniGrid3.Controls.Add(this.Mini3Tile3, 2, 0);
-            this.miniGrid3.Controls.Add(this.Mini3Tile2, 1, 0);
-            this.miniGrid3.Controls.Add(this.Mini3Tile1, 0, 0);
-            this.miniGrid3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.miniGrid3.Location = new System.Drawing.Point(0, 0);
-            this.miniGrid3.Name = "miniGrid3";
-            this.miniGrid3.RowCount = 3;
-            this.miniGrid3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.miniGrid3.Size = new System.Drawing.Size(136, 136);
-            this.miniGrid3.TabIndex = 2;
-            // 
-            // Mini3Tile9
-            // 
-            this.Mini3Tile9.AutoSize = true;
-            this.Mini3Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile9.Location = new System.Drawing.Point(93, 90);
-            this.Mini3Tile9.Name = "Mini3Tile9";
-            this.Mini3Tile9.Size = new System.Drawing.Size(40, 46);
-            this.Mini3Tile9.TabIndex = 8;
-            this.Mini3Tile9.Text = "Mini3Tile9";
-            this.Mini3Tile9.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile8
-            // 
-            this.Mini3Tile8.AutoSize = true;
-            this.Mini3Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile8.Location = new System.Drawing.Point(48, 90);
-            this.Mini3Tile8.Name = "Mini3Tile8";
-            this.Mini3Tile8.Size = new System.Drawing.Size(39, 46);
-            this.Mini3Tile8.TabIndex = 7;
-            this.Mini3Tile8.Text = "Mini3Tile8";
-            this.Mini3Tile8.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile7
-            // 
-            this.Mini3Tile7.AutoSize = true;
-            this.Mini3Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile7.Location = new System.Drawing.Point(3, 90);
-            this.Mini3Tile7.Name = "Mini3Tile7";
-            this.Mini3Tile7.Size = new System.Drawing.Size(39, 46);
-            this.Mini3Tile7.TabIndex = 6;
-            this.Mini3Tile7.Text = "Mini3Tile7";
-            this.Mini3Tile7.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile6
-            // 
-            this.Mini3Tile6.AutoSize = true;
-            this.Mini3Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile6.Location = new System.Drawing.Point(93, 45);
-            this.Mini3Tile6.Name = "Mini3Tile6";
-            this.Mini3Tile6.Size = new System.Drawing.Size(40, 45);
-            this.Mini3Tile6.TabIndex = 5;
-            this.Mini3Tile6.Text = "Mini3Tile6";
-            this.Mini3Tile6.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile5
-            // 
-            this.Mini3Tile5.AutoSize = true;
-            this.Mini3Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile5.Location = new System.Drawing.Point(48, 45);
-            this.Mini3Tile5.Name = "Mini3Tile5";
-            this.Mini3Tile5.Size = new System.Drawing.Size(39, 45);
-            this.Mini3Tile5.TabIndex = 4;
-            this.Mini3Tile5.Text = "Mini3Tile5";
-            this.Mini3Tile5.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile4
-            // 
-            this.Mini3Tile4.AutoSize = true;
-            this.Mini3Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile4.Location = new System.Drawing.Point(3, 45);
-            this.Mini3Tile4.Name = "Mini3Tile4";
-            this.Mini3Tile4.Size = new System.Drawing.Size(39, 45);
-            this.Mini3Tile4.TabIndex = 3;
-            this.Mini3Tile4.Text = "Mini3Tile4";
-            this.Mini3Tile4.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile3
-            // 
-            this.Mini3Tile3.AutoSize = true;
-            this.Mini3Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile3.Location = new System.Drawing.Point(93, 0);
-            this.Mini3Tile3.Name = "Mini3Tile3";
-            this.Mini3Tile3.Size = new System.Drawing.Size(40, 45);
-            this.Mini3Tile3.TabIndex = 2;
-            this.Mini3Tile3.Text = "Mini3Tile3";
-            this.Mini3Tile3.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile2
-            // 
-            this.Mini3Tile2.AutoSize = true;
-            this.Mini3Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile2.Location = new System.Drawing.Point(48, 0);
-            this.Mini3Tile2.Name = "Mini3Tile2";
-            this.Mini3Tile2.Size = new System.Drawing.Size(39, 45);
-            this.Mini3Tile2.TabIndex = 1;
-            this.Mini3Tile2.Text = "Mini3Tile2";
-            this.Mini3Tile2.Click += new System.EventHandler(this.Tile_Click);
-            // 
-            // Mini3Tile1
-            // 
-            this.Mini3Tile1.AutoSize = true;
-            this.Mini3Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mini3Tile1.Location = new System.Drawing.Point(3, 0);
-            this.Mini3Tile1.Name = "Mini3Tile1";
-            this.Mini3Tile1.Size = new System.Drawing.Size(39, 45);
-            this.Mini3Tile1.TabIndex = 0;
-            this.Mini3Tile1.Text = "Mini3Tile1";
-            this.Mini3Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // Cell2
+            // 
+            this.Cell2.Controls.Add(this.winLabel2);
+            this.Cell2.Controls.Add(this.miniGrid2);
+            this.Cell2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell2.Location = new System.Drawing.Point(147, 4);
+            this.Cell2.Name = "Cell2";
+            this.Cell2.Size = new System.Drawing.Size(136, 136);
+            this.Cell2.TabIndex = 9;
+            // 
+            // winLabel2
+            // 
+            this.winLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel2.Location = new System.Drawing.Point(0, 0);
+            this.winLabel2.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel2.Name = "winLabel2";
+            this.winLabel2.Size = new System.Drawing.Size(136, 136);
+            this.winLabel2.TabIndex = 2;
+            this.winLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel2.Visible = false;
             // 
             // miniGrid2
             // 
@@ -1228,6 +385,30 @@
             this.Mini2Tile1.TabIndex = 0;
             this.Mini2Tile1.Text = "Mini2Tile1";
             this.Mini2Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Cell1
+            // 
+            this.Cell1.Controls.Add(this.winLabel1);
+            this.Cell1.Controls.Add(this.miniGrid1);
+            this.Cell1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell1.Location = new System.Drawing.Point(4, 4);
+            this.Cell1.Name = "Cell1";
+            this.Cell1.Size = new System.Drawing.Size(136, 136);
+            this.Cell1.TabIndex = 10;
+            // 
+            // winLabel1
+            // 
+            this.winLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.winLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.winLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.winLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winLabel1.Location = new System.Drawing.Point(0, 0);
+            this.winLabel1.Margin = new System.Windows.Forms.Padding(3);
+            this.winLabel1.Name = "winLabel1";
+            this.winLabel1.Size = new System.Drawing.Size(136, 136);
+            this.winLabel1.TabIndex = 1;
+            this.winLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.winLabel1.Visible = false;
             // 
             // miniGrid1
             // 
@@ -1355,26 +536,6 @@
             this.Mini1Tile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Mini1Tile1.Click += new System.EventHandler(this.Tile_Click);
             // 
-            // Cell2
-            // 
-            this.Cell2.Controls.Add(this.winLabel2);
-            this.Cell2.Controls.Add(this.miniGrid2);
-            this.Cell2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell2.Location = new System.Drawing.Point(147, 4);
-            this.Cell2.Name = "Cell2";
-            this.Cell2.Size = new System.Drawing.Size(136, 136);
-            this.Cell2.TabIndex = 9;
-            // 
-            // Cell1
-            // 
-            this.Cell1.Controls.Add(this.winLabel1);
-            this.Cell1.Controls.Add(this.miniGrid1);
-            this.Cell1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell1.Location = new System.Drawing.Point(4, 4);
-            this.Cell1.Name = "Cell1";
-            this.Cell1.Size = new System.Drawing.Size(136, 136);
-            this.Cell1.TabIndex = 10;
-            // 
             // Cell3
             // 
             this.Cell3.Controls.Add(this.winLabel3);
@@ -1384,94 +545,6 @@
             this.Cell3.Name = "Cell3";
             this.Cell3.Size = new System.Drawing.Size(136, 136);
             this.Cell3.TabIndex = 11;
-            // 
-            // Cell4
-            // 
-            this.Cell4.Controls.Add(this.winLabel4);
-            this.Cell4.Controls.Add(this.miniGrid4);
-            this.Cell4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell4.Location = new System.Drawing.Point(4, 147);
-            this.Cell4.Name = "Cell4";
-            this.Cell4.Size = new System.Drawing.Size(136, 135);
-            this.Cell4.TabIndex = 12;
-            // 
-            // Cell5
-            // 
-            this.Cell5.Controls.Add(this.winLabel5);
-            this.Cell5.Controls.Add(this.miniGrid5);
-            this.Cell5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell5.Location = new System.Drawing.Point(147, 147);
-            this.Cell5.Name = "Cell5";
-            this.Cell5.Size = new System.Drawing.Size(136, 135);
-            this.Cell5.TabIndex = 13;
-            // 
-            // Cell6
-            // 
-            this.Cell6.Controls.Add(this.winLabel6);
-            this.Cell6.Controls.Add(this.miniGrid6);
-            this.Cell6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell6.Location = new System.Drawing.Point(290, 147);
-            this.Cell6.Name = "Cell6";
-            this.Cell6.Size = new System.Drawing.Size(136, 135);
-            this.Cell6.TabIndex = 14;
-            // 
-            // Cell7
-            // 
-            this.Cell7.Controls.Add(this.winLabel7);
-            this.Cell7.Controls.Add(this.miniGrid7);
-            this.Cell7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell7.Location = new System.Drawing.Point(4, 289);
-            this.Cell7.Name = "Cell7";
-            this.Cell7.Size = new System.Drawing.Size(136, 137);
-            this.Cell7.TabIndex = 15;
-            // 
-            // Cell8
-            // 
-            this.Cell8.Controls.Add(this.winLabel8);
-            this.Cell8.Controls.Add(this.miniGrid8);
-            this.Cell8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell8.Location = new System.Drawing.Point(147, 289);
-            this.Cell8.Name = "Cell8";
-            this.Cell8.Size = new System.Drawing.Size(136, 137);
-            this.Cell8.TabIndex = 16;
-            // 
-            // Cell9
-            // 
-            this.Cell9.Controls.Add(this.winLabel9);
-            this.Cell9.Controls.Add(this.miniGrid9);
-            this.Cell9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell9.Location = new System.Drawing.Point(290, 289);
-            this.Cell9.Name = "Cell9";
-            this.Cell9.Size = new System.Drawing.Size(136, 137);
-            this.Cell9.TabIndex = 17;
-            // 
-            // winLabel1
-            // 
-            this.winLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.winLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.winLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.winLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winLabel1.Location = new System.Drawing.Point(0, 0);
-            this.winLabel1.Margin = new System.Windows.Forms.Padding(3);
-            this.winLabel1.Name = "winLabel1";
-            this.winLabel1.Size = new System.Drawing.Size(136, 136);
-            this.winLabel1.TabIndex = 1;
-            this.winLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.winLabel1.Visible = false;
-            // 
-            // winLabel2
-            // 
-            this.winLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.winLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.winLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.winLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winLabel2.Location = new System.Drawing.Point(0, 0);
-            this.winLabel2.Margin = new System.Windows.Forms.Padding(3);
-            this.winLabel2.Name = "winLabel2";
-            this.winLabel2.Size = new System.Drawing.Size(136, 136);
-            this.winLabel2.TabIndex = 2;
-            this.winLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.winLabel2.Visible = false;
             // 
             // winLabel3
             // 
@@ -1487,6 +560,140 @@
             this.winLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winLabel3.Visible = false;
             // 
+            // miniGrid3
+            // 
+            this.miniGrid3.ColumnCount = 3;
+            this.miniGrid3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid3.Controls.Add(this.Mini3Tile9, 2, 2);
+            this.miniGrid3.Controls.Add(this.Mini3Tile8, 1, 2);
+            this.miniGrid3.Controls.Add(this.Mini3Tile7, 0, 2);
+            this.miniGrid3.Controls.Add(this.Mini3Tile6, 2, 1);
+            this.miniGrid3.Controls.Add(this.Mini3Tile5, 1, 1);
+            this.miniGrid3.Controls.Add(this.Mini3Tile4, 0, 1);
+            this.miniGrid3.Controls.Add(this.Mini3Tile3, 2, 0);
+            this.miniGrid3.Controls.Add(this.Mini3Tile2, 1, 0);
+            this.miniGrid3.Controls.Add(this.Mini3Tile1, 0, 0);
+            this.miniGrid3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniGrid3.Location = new System.Drawing.Point(0, 0);
+            this.miniGrid3.Name = "miniGrid3";
+            this.miniGrid3.RowCount = 3;
+            this.miniGrid3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid3.Size = new System.Drawing.Size(136, 136);
+            this.miniGrid3.TabIndex = 2;
+            // 
+            // Mini3Tile9
+            // 
+            this.Mini3Tile9.AutoSize = true;
+            this.Mini3Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile9.Location = new System.Drawing.Point(93, 90);
+            this.Mini3Tile9.Name = "Mini3Tile9";
+            this.Mini3Tile9.Size = new System.Drawing.Size(40, 46);
+            this.Mini3Tile9.TabIndex = 8;
+            this.Mini3Tile9.Text = "Mini3Tile9";
+            this.Mini3Tile9.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile8
+            // 
+            this.Mini3Tile8.AutoSize = true;
+            this.Mini3Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile8.Location = new System.Drawing.Point(48, 90);
+            this.Mini3Tile8.Name = "Mini3Tile8";
+            this.Mini3Tile8.Size = new System.Drawing.Size(39, 46);
+            this.Mini3Tile8.TabIndex = 7;
+            this.Mini3Tile8.Text = "Mini3Tile8";
+            this.Mini3Tile8.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile7
+            // 
+            this.Mini3Tile7.AutoSize = true;
+            this.Mini3Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile7.Location = new System.Drawing.Point(3, 90);
+            this.Mini3Tile7.Name = "Mini3Tile7";
+            this.Mini3Tile7.Size = new System.Drawing.Size(39, 46);
+            this.Mini3Tile7.TabIndex = 6;
+            this.Mini3Tile7.Text = "Mini3Tile7";
+            this.Mini3Tile7.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile6
+            // 
+            this.Mini3Tile6.AutoSize = true;
+            this.Mini3Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile6.Location = new System.Drawing.Point(93, 45);
+            this.Mini3Tile6.Name = "Mini3Tile6";
+            this.Mini3Tile6.Size = new System.Drawing.Size(40, 45);
+            this.Mini3Tile6.TabIndex = 5;
+            this.Mini3Tile6.Text = "Mini3Tile6";
+            this.Mini3Tile6.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile5
+            // 
+            this.Mini3Tile5.AutoSize = true;
+            this.Mini3Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile5.Location = new System.Drawing.Point(48, 45);
+            this.Mini3Tile5.Name = "Mini3Tile5";
+            this.Mini3Tile5.Size = new System.Drawing.Size(39, 45);
+            this.Mini3Tile5.TabIndex = 4;
+            this.Mini3Tile5.Text = "Mini3Tile5";
+            this.Mini3Tile5.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile4
+            // 
+            this.Mini3Tile4.AutoSize = true;
+            this.Mini3Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile4.Location = new System.Drawing.Point(3, 45);
+            this.Mini3Tile4.Name = "Mini3Tile4";
+            this.Mini3Tile4.Size = new System.Drawing.Size(39, 45);
+            this.Mini3Tile4.TabIndex = 3;
+            this.Mini3Tile4.Text = "Mini3Tile4";
+            this.Mini3Tile4.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile3
+            // 
+            this.Mini3Tile3.AutoSize = true;
+            this.Mini3Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile3.Location = new System.Drawing.Point(93, 0);
+            this.Mini3Tile3.Name = "Mini3Tile3";
+            this.Mini3Tile3.Size = new System.Drawing.Size(40, 45);
+            this.Mini3Tile3.TabIndex = 2;
+            this.Mini3Tile3.Text = "Mini3Tile3";
+            this.Mini3Tile3.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile2
+            // 
+            this.Mini3Tile2.AutoSize = true;
+            this.Mini3Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile2.Location = new System.Drawing.Point(48, 0);
+            this.Mini3Tile2.Name = "Mini3Tile2";
+            this.Mini3Tile2.Size = new System.Drawing.Size(39, 45);
+            this.Mini3Tile2.TabIndex = 1;
+            this.Mini3Tile2.Text = "Mini3Tile2";
+            this.Mini3Tile2.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini3Tile1
+            // 
+            this.Mini3Tile1.AutoSize = true;
+            this.Mini3Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini3Tile1.Location = new System.Drawing.Point(3, 0);
+            this.Mini3Tile1.Name = "Mini3Tile1";
+            this.Mini3Tile1.Size = new System.Drawing.Size(39, 45);
+            this.Mini3Tile1.TabIndex = 0;
+            this.Mini3Tile1.Text = "Mini3Tile1";
+            this.Mini3Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Cell4
+            // 
+            this.Cell4.Controls.Add(this.winLabel4);
+            this.Cell4.Controls.Add(this.miniGrid4);
+            this.Cell4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell4.Location = new System.Drawing.Point(4, 147);
+            this.Cell4.Name = "Cell4";
+            this.Cell4.Size = new System.Drawing.Size(136, 135);
+            this.Cell4.TabIndex = 12;
+            // 
             // winLabel4
             // 
             this.winLabel4.BackColor = System.Drawing.Color.Transparent;
@@ -1500,6 +707,140 @@
             this.winLabel4.TabIndex = 4;
             this.winLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winLabel4.Visible = false;
+            // 
+            // miniGrid4
+            // 
+            this.miniGrid4.ColumnCount = 3;
+            this.miniGrid4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid4.Controls.Add(this.Mini4Tile9, 2, 2);
+            this.miniGrid4.Controls.Add(this.Mini4Tile8, 1, 2);
+            this.miniGrid4.Controls.Add(this.Mini4Tile7, 0, 2);
+            this.miniGrid4.Controls.Add(this.Mini4Tile6, 2, 1);
+            this.miniGrid4.Controls.Add(this.Mini4Tile5, 1, 1);
+            this.miniGrid4.Controls.Add(this.Mini4Tile4, 0, 1);
+            this.miniGrid4.Controls.Add(this.Mini4Tile3, 2, 0);
+            this.miniGrid4.Controls.Add(this.Mini4Tile2, 1, 0);
+            this.miniGrid4.Controls.Add(this.Mini4Tile1, 0, 0);
+            this.miniGrid4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniGrid4.Location = new System.Drawing.Point(0, 0);
+            this.miniGrid4.Name = "miniGrid4";
+            this.miniGrid4.RowCount = 3;
+            this.miniGrid4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid4.Size = new System.Drawing.Size(136, 135);
+            this.miniGrid4.TabIndex = 3;
+            // 
+            // Mini4Tile9
+            // 
+            this.Mini4Tile9.AutoSize = true;
+            this.Mini4Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile9.Location = new System.Drawing.Point(93, 90);
+            this.Mini4Tile9.Name = "Mini4Tile9";
+            this.Mini4Tile9.Size = new System.Drawing.Size(40, 45);
+            this.Mini4Tile9.TabIndex = 8;
+            this.Mini4Tile9.Text = "Mini4Tile9";
+            this.Mini4Tile9.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile8
+            // 
+            this.Mini4Tile8.AutoSize = true;
+            this.Mini4Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile8.Location = new System.Drawing.Point(48, 90);
+            this.Mini4Tile8.Name = "Mini4Tile8";
+            this.Mini4Tile8.Size = new System.Drawing.Size(39, 45);
+            this.Mini4Tile8.TabIndex = 7;
+            this.Mini4Tile8.Text = "Mini4Tile8";
+            this.Mini4Tile8.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile7
+            // 
+            this.Mini4Tile7.AutoSize = true;
+            this.Mini4Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile7.Location = new System.Drawing.Point(3, 90);
+            this.Mini4Tile7.Name = "Mini4Tile7";
+            this.Mini4Tile7.Size = new System.Drawing.Size(39, 45);
+            this.Mini4Tile7.TabIndex = 6;
+            this.Mini4Tile7.Text = "Mini4Tile7";
+            this.Mini4Tile7.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile6
+            // 
+            this.Mini4Tile6.AutoSize = true;
+            this.Mini4Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile6.Location = new System.Drawing.Point(93, 45);
+            this.Mini4Tile6.Name = "Mini4Tile6";
+            this.Mini4Tile6.Size = new System.Drawing.Size(40, 45);
+            this.Mini4Tile6.TabIndex = 5;
+            this.Mini4Tile6.Text = "Mini4Tile6";
+            this.Mini4Tile6.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile5
+            // 
+            this.Mini4Tile5.AutoSize = true;
+            this.Mini4Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile5.Location = new System.Drawing.Point(48, 45);
+            this.Mini4Tile5.Name = "Mini4Tile5";
+            this.Mini4Tile5.Size = new System.Drawing.Size(39, 45);
+            this.Mini4Tile5.TabIndex = 4;
+            this.Mini4Tile5.Text = "Mini4Tile5";
+            this.Mini4Tile5.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile4
+            // 
+            this.Mini4Tile4.AutoSize = true;
+            this.Mini4Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile4.Location = new System.Drawing.Point(3, 45);
+            this.Mini4Tile4.Name = "Mini4Tile4";
+            this.Mini4Tile4.Size = new System.Drawing.Size(39, 45);
+            this.Mini4Tile4.TabIndex = 3;
+            this.Mini4Tile4.Text = "Mini4Tile4";
+            this.Mini4Tile4.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile3
+            // 
+            this.Mini4Tile3.AutoSize = true;
+            this.Mini4Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile3.Location = new System.Drawing.Point(93, 0);
+            this.Mini4Tile3.Name = "Mini4Tile3";
+            this.Mini4Tile3.Size = new System.Drawing.Size(40, 45);
+            this.Mini4Tile3.TabIndex = 2;
+            this.Mini4Tile3.Text = "Mini4Tile3";
+            this.Mini4Tile3.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile2
+            // 
+            this.Mini4Tile2.AutoSize = true;
+            this.Mini4Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile2.Location = new System.Drawing.Point(48, 0);
+            this.Mini4Tile2.Name = "Mini4Tile2";
+            this.Mini4Tile2.Size = new System.Drawing.Size(39, 45);
+            this.Mini4Tile2.TabIndex = 1;
+            this.Mini4Tile2.Text = "Mini4Tile2";
+            this.Mini4Tile2.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini4Tile1
+            // 
+            this.Mini4Tile1.AutoSize = true;
+            this.Mini4Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini4Tile1.Location = new System.Drawing.Point(3, 0);
+            this.Mini4Tile1.Name = "Mini4Tile1";
+            this.Mini4Tile1.Size = new System.Drawing.Size(39, 45);
+            this.Mini4Tile1.TabIndex = 0;
+            this.Mini4Tile1.Text = "Mini4Tile1";
+            this.Mini4Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Cell5
+            // 
+            this.Cell5.Controls.Add(this.winLabel5);
+            this.Cell5.Controls.Add(this.miniGrid5);
+            this.Cell5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell5.Location = new System.Drawing.Point(147, 147);
+            this.Cell5.Name = "Cell5";
+            this.Cell5.Size = new System.Drawing.Size(136, 135);
+            this.Cell5.TabIndex = 13;
             // 
             // winLabel5
             // 
@@ -1515,6 +856,140 @@
             this.winLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winLabel5.Visible = false;
             // 
+            // miniGrid5
+            // 
+            this.miniGrid5.ColumnCount = 3;
+            this.miniGrid5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid5.Controls.Add(this.Mini5Tile9, 2, 2);
+            this.miniGrid5.Controls.Add(this.Mini5Tile8, 1, 2);
+            this.miniGrid5.Controls.Add(this.Mini5Tile7, 0, 2);
+            this.miniGrid5.Controls.Add(this.Mini5Tile6, 2, 1);
+            this.miniGrid5.Controls.Add(this.Mini5Tile5, 1, 1);
+            this.miniGrid5.Controls.Add(this.Mini5Tile4, 0, 1);
+            this.miniGrid5.Controls.Add(this.Mini5Tile3, 2, 0);
+            this.miniGrid5.Controls.Add(this.Mini5Tile2, 1, 0);
+            this.miniGrid5.Controls.Add(this.Mini5Tile1, 0, 0);
+            this.miniGrid5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniGrid5.Location = new System.Drawing.Point(0, 0);
+            this.miniGrid5.Name = "miniGrid5";
+            this.miniGrid5.RowCount = 3;
+            this.miniGrid5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid5.Size = new System.Drawing.Size(136, 135);
+            this.miniGrid5.TabIndex = 4;
+            // 
+            // Mini5Tile9
+            // 
+            this.Mini5Tile9.AutoSize = true;
+            this.Mini5Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile9.Location = new System.Drawing.Point(93, 90);
+            this.Mini5Tile9.Name = "Mini5Tile9";
+            this.Mini5Tile9.Size = new System.Drawing.Size(40, 45);
+            this.Mini5Tile9.TabIndex = 8;
+            this.Mini5Tile9.Text = "Mini5Tile9";
+            this.Mini5Tile9.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile8
+            // 
+            this.Mini5Tile8.AutoSize = true;
+            this.Mini5Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile8.Location = new System.Drawing.Point(48, 90);
+            this.Mini5Tile8.Name = "Mini5Tile8";
+            this.Mini5Tile8.Size = new System.Drawing.Size(39, 45);
+            this.Mini5Tile8.TabIndex = 7;
+            this.Mini5Tile8.Text = "Mini5Tile8";
+            this.Mini5Tile8.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile7
+            // 
+            this.Mini5Tile7.AutoSize = true;
+            this.Mini5Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile7.Location = new System.Drawing.Point(3, 90);
+            this.Mini5Tile7.Name = "Mini5Tile7";
+            this.Mini5Tile7.Size = new System.Drawing.Size(39, 45);
+            this.Mini5Tile7.TabIndex = 6;
+            this.Mini5Tile7.Text = "Mini5Tile7";
+            this.Mini5Tile7.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile6
+            // 
+            this.Mini5Tile6.AutoSize = true;
+            this.Mini5Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile6.Location = new System.Drawing.Point(93, 45);
+            this.Mini5Tile6.Name = "Mini5Tile6";
+            this.Mini5Tile6.Size = new System.Drawing.Size(40, 45);
+            this.Mini5Tile6.TabIndex = 5;
+            this.Mini5Tile6.Text = "Mini5Tile6";
+            this.Mini5Tile6.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile5
+            // 
+            this.Mini5Tile5.AutoSize = true;
+            this.Mini5Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile5.Location = new System.Drawing.Point(48, 45);
+            this.Mini5Tile5.Name = "Mini5Tile5";
+            this.Mini5Tile5.Size = new System.Drawing.Size(39, 45);
+            this.Mini5Tile5.TabIndex = 4;
+            this.Mini5Tile5.Text = "Mini5Tile5";
+            this.Mini5Tile5.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile4
+            // 
+            this.Mini5Tile4.AutoSize = true;
+            this.Mini5Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile4.Location = new System.Drawing.Point(3, 45);
+            this.Mini5Tile4.Name = "Mini5Tile4";
+            this.Mini5Tile4.Size = new System.Drawing.Size(39, 45);
+            this.Mini5Tile4.TabIndex = 3;
+            this.Mini5Tile4.Text = "Mini5Tile4";
+            this.Mini5Tile4.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile3
+            // 
+            this.Mini5Tile3.AutoSize = true;
+            this.Mini5Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile3.Location = new System.Drawing.Point(93, 0);
+            this.Mini5Tile3.Name = "Mini5Tile3";
+            this.Mini5Tile3.Size = new System.Drawing.Size(40, 45);
+            this.Mini5Tile3.TabIndex = 2;
+            this.Mini5Tile3.Text = "Mini5Tile3";
+            this.Mini5Tile3.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile2
+            // 
+            this.Mini5Tile2.AutoSize = true;
+            this.Mini5Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile2.Location = new System.Drawing.Point(48, 0);
+            this.Mini5Tile2.Name = "Mini5Tile2";
+            this.Mini5Tile2.Size = new System.Drawing.Size(39, 45);
+            this.Mini5Tile2.TabIndex = 1;
+            this.Mini5Tile2.Text = "Mini5Tile2";
+            this.Mini5Tile2.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini5Tile1
+            // 
+            this.Mini5Tile1.AutoSize = true;
+            this.Mini5Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini5Tile1.Location = new System.Drawing.Point(3, 0);
+            this.Mini5Tile1.Name = "Mini5Tile1";
+            this.Mini5Tile1.Size = new System.Drawing.Size(39, 45);
+            this.Mini5Tile1.TabIndex = 0;
+            this.Mini5Tile1.Text = "Mini5Tile1";
+            this.Mini5Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Cell6
+            // 
+            this.Cell6.Controls.Add(this.winLabel6);
+            this.Cell6.Controls.Add(this.miniGrid6);
+            this.Cell6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell6.Location = new System.Drawing.Point(290, 147);
+            this.Cell6.Name = "Cell6";
+            this.Cell6.Size = new System.Drawing.Size(136, 135);
+            this.Cell6.TabIndex = 14;
+            // 
             // winLabel6
             // 
             this.winLabel6.BackColor = System.Drawing.Color.Transparent;
@@ -1528,6 +1003,140 @@
             this.winLabel6.TabIndex = 6;
             this.winLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winLabel6.Visible = false;
+            // 
+            // miniGrid6
+            // 
+            this.miniGrid6.ColumnCount = 3;
+            this.miniGrid6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid6.Controls.Add(this.Mini6Tile9, 2, 2);
+            this.miniGrid6.Controls.Add(this.Mini6Tile8, 1, 2);
+            this.miniGrid6.Controls.Add(this.Mini6Tile7, 0, 2);
+            this.miniGrid6.Controls.Add(this.Mini6Tile6, 2, 1);
+            this.miniGrid6.Controls.Add(this.Mini6Tile5, 1, 1);
+            this.miniGrid6.Controls.Add(this.Mini6Tile4, 0, 1);
+            this.miniGrid6.Controls.Add(this.Mini6Tile3, 2, 0);
+            this.miniGrid6.Controls.Add(this.Mini6Tile2, 1, 0);
+            this.miniGrid6.Controls.Add(this.Mini6Tile1, 0, 0);
+            this.miniGrid6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniGrid6.Location = new System.Drawing.Point(0, 0);
+            this.miniGrid6.Name = "miniGrid6";
+            this.miniGrid6.RowCount = 3;
+            this.miniGrid6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid6.Size = new System.Drawing.Size(136, 135);
+            this.miniGrid6.TabIndex = 5;
+            // 
+            // Mini6Tile9
+            // 
+            this.Mini6Tile9.AutoSize = true;
+            this.Mini6Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile9.Location = new System.Drawing.Point(93, 90);
+            this.Mini6Tile9.Name = "Mini6Tile9";
+            this.Mini6Tile9.Size = new System.Drawing.Size(40, 45);
+            this.Mini6Tile9.TabIndex = 8;
+            this.Mini6Tile9.Text = "Mini6Tile9";
+            this.Mini6Tile9.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile8
+            // 
+            this.Mini6Tile8.AutoSize = true;
+            this.Mini6Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile8.Location = new System.Drawing.Point(48, 90);
+            this.Mini6Tile8.Name = "Mini6Tile8";
+            this.Mini6Tile8.Size = new System.Drawing.Size(39, 45);
+            this.Mini6Tile8.TabIndex = 7;
+            this.Mini6Tile8.Text = "Mini6Tile8";
+            this.Mini6Tile8.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile7
+            // 
+            this.Mini6Tile7.AutoSize = true;
+            this.Mini6Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile7.Location = new System.Drawing.Point(3, 90);
+            this.Mini6Tile7.Name = "Mini6Tile7";
+            this.Mini6Tile7.Size = new System.Drawing.Size(39, 45);
+            this.Mini6Tile7.TabIndex = 6;
+            this.Mini6Tile7.Text = "Mini6Tile7";
+            this.Mini6Tile7.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile6
+            // 
+            this.Mini6Tile6.AutoSize = true;
+            this.Mini6Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile6.Location = new System.Drawing.Point(93, 45);
+            this.Mini6Tile6.Name = "Mini6Tile6";
+            this.Mini6Tile6.Size = new System.Drawing.Size(40, 45);
+            this.Mini6Tile6.TabIndex = 5;
+            this.Mini6Tile6.Text = "Mini6Tile6";
+            this.Mini6Tile6.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile5
+            // 
+            this.Mini6Tile5.AutoSize = true;
+            this.Mini6Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile5.Location = new System.Drawing.Point(48, 45);
+            this.Mini6Tile5.Name = "Mini6Tile5";
+            this.Mini6Tile5.Size = new System.Drawing.Size(39, 45);
+            this.Mini6Tile5.TabIndex = 4;
+            this.Mini6Tile5.Text = "Mini6Tile5";
+            this.Mini6Tile5.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile4
+            // 
+            this.Mini6Tile4.AutoSize = true;
+            this.Mini6Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile4.Location = new System.Drawing.Point(3, 45);
+            this.Mini6Tile4.Name = "Mini6Tile4";
+            this.Mini6Tile4.Size = new System.Drawing.Size(39, 45);
+            this.Mini6Tile4.TabIndex = 3;
+            this.Mini6Tile4.Text = "Mini6Tile4";
+            this.Mini6Tile4.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile3
+            // 
+            this.Mini6Tile3.AutoSize = true;
+            this.Mini6Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile3.Location = new System.Drawing.Point(93, 0);
+            this.Mini6Tile3.Name = "Mini6Tile3";
+            this.Mini6Tile3.Size = new System.Drawing.Size(40, 45);
+            this.Mini6Tile3.TabIndex = 2;
+            this.Mini6Tile3.Text = "Mini6Tile3";
+            this.Mini6Tile3.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile2
+            // 
+            this.Mini6Tile2.AutoSize = true;
+            this.Mini6Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile2.Location = new System.Drawing.Point(48, 0);
+            this.Mini6Tile2.Name = "Mini6Tile2";
+            this.Mini6Tile2.Size = new System.Drawing.Size(39, 45);
+            this.Mini6Tile2.TabIndex = 1;
+            this.Mini6Tile2.Text = "Mini6Tile2";
+            this.Mini6Tile2.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini6Tile1
+            // 
+            this.Mini6Tile1.AutoSize = true;
+            this.Mini6Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini6Tile1.Location = new System.Drawing.Point(3, 0);
+            this.Mini6Tile1.Name = "Mini6Tile1";
+            this.Mini6Tile1.Size = new System.Drawing.Size(39, 45);
+            this.Mini6Tile1.TabIndex = 0;
+            this.Mini6Tile1.Text = "Mini6Tile1";
+            this.Mini6Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Cell7
+            // 
+            this.Cell7.Controls.Add(this.winLabel7);
+            this.Cell7.Controls.Add(this.miniGrid7);
+            this.Cell7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell7.Location = new System.Drawing.Point(4, 289);
+            this.Cell7.Name = "Cell7";
+            this.Cell7.Size = new System.Drawing.Size(136, 137);
+            this.Cell7.TabIndex = 15;
             // 
             // winLabel7
             // 
@@ -1543,6 +1152,140 @@
             this.winLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winLabel7.Visible = false;
             // 
+            // miniGrid7
+            // 
+            this.miniGrid7.ColumnCount = 3;
+            this.miniGrid7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid7.Controls.Add(this.Mini7Tile9, 2, 2);
+            this.miniGrid7.Controls.Add(this.Mini7Tile8, 1, 2);
+            this.miniGrid7.Controls.Add(this.Mini7Tile7, 0, 2);
+            this.miniGrid7.Controls.Add(this.Mini7Tile6, 2, 1);
+            this.miniGrid7.Controls.Add(this.Mini7Tile5, 1, 1);
+            this.miniGrid7.Controls.Add(this.Mini7Tile4, 0, 1);
+            this.miniGrid7.Controls.Add(this.Mini7Tile3, 2, 0);
+            this.miniGrid7.Controls.Add(this.Mini7Tile2, 1, 0);
+            this.miniGrid7.Controls.Add(this.Mini7Tile1, 0, 0);
+            this.miniGrid7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniGrid7.Location = new System.Drawing.Point(0, 0);
+            this.miniGrid7.Name = "miniGrid7";
+            this.miniGrid7.RowCount = 3;
+            this.miniGrid7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid7.Size = new System.Drawing.Size(136, 137);
+            this.miniGrid7.TabIndex = 6;
+            // 
+            // Mini7Tile9
+            // 
+            this.Mini7Tile9.AutoSize = true;
+            this.Mini7Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile9.Location = new System.Drawing.Point(93, 90);
+            this.Mini7Tile9.Name = "Mini7Tile9";
+            this.Mini7Tile9.Size = new System.Drawing.Size(40, 47);
+            this.Mini7Tile9.TabIndex = 8;
+            this.Mini7Tile9.Text = "Mini7Tile9";
+            this.Mini7Tile9.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile8
+            // 
+            this.Mini7Tile8.AutoSize = true;
+            this.Mini7Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile8.Location = new System.Drawing.Point(48, 90);
+            this.Mini7Tile8.Name = "Mini7Tile8";
+            this.Mini7Tile8.Size = new System.Drawing.Size(39, 47);
+            this.Mini7Tile8.TabIndex = 7;
+            this.Mini7Tile8.Text = "Mini7Tile8";
+            this.Mini7Tile8.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile7
+            // 
+            this.Mini7Tile7.AutoSize = true;
+            this.Mini7Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile7.Location = new System.Drawing.Point(3, 90);
+            this.Mini7Tile7.Name = "Mini7Tile7";
+            this.Mini7Tile7.Size = new System.Drawing.Size(39, 47);
+            this.Mini7Tile7.TabIndex = 6;
+            this.Mini7Tile7.Text = "Mini7Tile7";
+            this.Mini7Tile7.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile6
+            // 
+            this.Mini7Tile6.AutoSize = true;
+            this.Mini7Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile6.Location = new System.Drawing.Point(93, 45);
+            this.Mini7Tile6.Name = "Mini7Tile6";
+            this.Mini7Tile6.Size = new System.Drawing.Size(40, 45);
+            this.Mini7Tile6.TabIndex = 5;
+            this.Mini7Tile6.Text = "Mini7Tile6";
+            this.Mini7Tile6.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile5
+            // 
+            this.Mini7Tile5.AutoSize = true;
+            this.Mini7Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile5.Location = new System.Drawing.Point(48, 45);
+            this.Mini7Tile5.Name = "Mini7Tile5";
+            this.Mini7Tile5.Size = new System.Drawing.Size(39, 45);
+            this.Mini7Tile5.TabIndex = 4;
+            this.Mini7Tile5.Text = "Mini7Tile5";
+            this.Mini7Tile5.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile4
+            // 
+            this.Mini7Tile4.AutoSize = true;
+            this.Mini7Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile4.Location = new System.Drawing.Point(3, 45);
+            this.Mini7Tile4.Name = "Mini7Tile4";
+            this.Mini7Tile4.Size = new System.Drawing.Size(39, 45);
+            this.Mini7Tile4.TabIndex = 3;
+            this.Mini7Tile4.Text = "Mini7Tile4";
+            this.Mini7Tile4.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile3
+            // 
+            this.Mini7Tile3.AutoSize = true;
+            this.Mini7Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile3.Location = new System.Drawing.Point(93, 0);
+            this.Mini7Tile3.Name = "Mini7Tile3";
+            this.Mini7Tile3.Size = new System.Drawing.Size(40, 45);
+            this.Mini7Tile3.TabIndex = 2;
+            this.Mini7Tile3.Text = "Mini7Tile3";
+            this.Mini7Tile3.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile2
+            // 
+            this.Mini7Tile2.AutoSize = true;
+            this.Mini7Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile2.Location = new System.Drawing.Point(48, 0);
+            this.Mini7Tile2.Name = "Mini7Tile2";
+            this.Mini7Tile2.Size = new System.Drawing.Size(39, 45);
+            this.Mini7Tile2.TabIndex = 1;
+            this.Mini7Tile2.Text = "Mini7Tile2";
+            this.Mini7Tile2.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini7Tile1
+            // 
+            this.Mini7Tile1.AutoSize = true;
+            this.Mini7Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini7Tile1.Location = new System.Drawing.Point(3, 0);
+            this.Mini7Tile1.Name = "Mini7Tile1";
+            this.Mini7Tile1.Size = new System.Drawing.Size(39, 45);
+            this.Mini7Tile1.TabIndex = 0;
+            this.Mini7Tile1.Text = "Mini7Tile1";
+            this.Mini7Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Cell8
+            // 
+            this.Cell8.Controls.Add(this.winLabel8);
+            this.Cell8.Controls.Add(this.miniGrid8);
+            this.Cell8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell8.Location = new System.Drawing.Point(147, 289);
+            this.Cell8.Name = "Cell8";
+            this.Cell8.Size = new System.Drawing.Size(136, 137);
+            this.Cell8.TabIndex = 16;
+            // 
             // winLabel8
             // 
             this.winLabel8.BackColor = System.Drawing.Color.Transparent;
@@ -1556,6 +1299,140 @@
             this.winLabel8.TabIndex = 8;
             this.winLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winLabel8.Visible = false;
+            // 
+            // miniGrid8
+            // 
+            this.miniGrid8.ColumnCount = 3;
+            this.miniGrid8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid8.Controls.Add(this.Mini8Tile9, 2, 2);
+            this.miniGrid8.Controls.Add(this.Mini8Tile8, 1, 2);
+            this.miniGrid8.Controls.Add(this.Mini8Tile7, 0, 2);
+            this.miniGrid8.Controls.Add(this.Mini8Tile6, 2, 1);
+            this.miniGrid8.Controls.Add(this.Mini8Tile5, 1, 1);
+            this.miniGrid8.Controls.Add(this.Mini8Tile4, 0, 1);
+            this.miniGrid8.Controls.Add(this.Mini8Tile3, 2, 0);
+            this.miniGrid8.Controls.Add(this.Mini8Tile2, 1, 0);
+            this.miniGrid8.Controls.Add(this.Mini8Tile1, 0, 0);
+            this.miniGrid8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniGrid8.Location = new System.Drawing.Point(0, 0);
+            this.miniGrid8.Name = "miniGrid8";
+            this.miniGrid8.RowCount = 3;
+            this.miniGrid8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid8.Size = new System.Drawing.Size(136, 137);
+            this.miniGrid8.TabIndex = 7;
+            // 
+            // Mini8Tile9
+            // 
+            this.Mini8Tile9.AutoSize = true;
+            this.Mini8Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile9.Location = new System.Drawing.Point(93, 90);
+            this.Mini8Tile9.Name = "Mini8Tile9";
+            this.Mini8Tile9.Size = new System.Drawing.Size(40, 47);
+            this.Mini8Tile9.TabIndex = 8;
+            this.Mini8Tile9.Text = "Mini8Tile9";
+            this.Mini8Tile9.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile8
+            // 
+            this.Mini8Tile8.AutoSize = true;
+            this.Mini8Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile8.Location = new System.Drawing.Point(48, 90);
+            this.Mini8Tile8.Name = "Mini8Tile8";
+            this.Mini8Tile8.Size = new System.Drawing.Size(39, 47);
+            this.Mini8Tile8.TabIndex = 7;
+            this.Mini8Tile8.Text = "Mini8Tile8";
+            this.Mini8Tile8.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile7
+            // 
+            this.Mini8Tile7.AutoSize = true;
+            this.Mini8Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile7.Location = new System.Drawing.Point(3, 90);
+            this.Mini8Tile7.Name = "Mini8Tile7";
+            this.Mini8Tile7.Size = new System.Drawing.Size(39, 47);
+            this.Mini8Tile7.TabIndex = 6;
+            this.Mini8Tile7.Text = "Mini8Tile7";
+            this.Mini8Tile7.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile6
+            // 
+            this.Mini8Tile6.AutoSize = true;
+            this.Mini8Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile6.Location = new System.Drawing.Point(93, 45);
+            this.Mini8Tile6.Name = "Mini8Tile6";
+            this.Mini8Tile6.Size = new System.Drawing.Size(40, 45);
+            this.Mini8Tile6.TabIndex = 5;
+            this.Mini8Tile6.Text = "Mini8Tile6";
+            this.Mini8Tile6.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile5
+            // 
+            this.Mini8Tile5.AutoSize = true;
+            this.Mini8Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile5.Location = new System.Drawing.Point(48, 45);
+            this.Mini8Tile5.Name = "Mini8Tile5";
+            this.Mini8Tile5.Size = new System.Drawing.Size(39, 45);
+            this.Mini8Tile5.TabIndex = 4;
+            this.Mini8Tile5.Text = "Mini8Tile5";
+            this.Mini8Tile5.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile4
+            // 
+            this.Mini8Tile4.AutoSize = true;
+            this.Mini8Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile4.Location = new System.Drawing.Point(3, 45);
+            this.Mini8Tile4.Name = "Mini8Tile4";
+            this.Mini8Tile4.Size = new System.Drawing.Size(39, 45);
+            this.Mini8Tile4.TabIndex = 3;
+            this.Mini8Tile4.Text = "Mini8Tile4";
+            this.Mini8Tile4.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile3
+            // 
+            this.Mini8Tile3.AutoSize = true;
+            this.Mini8Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile3.Location = new System.Drawing.Point(93, 0);
+            this.Mini8Tile3.Name = "Mini8Tile3";
+            this.Mini8Tile3.Size = new System.Drawing.Size(40, 45);
+            this.Mini8Tile3.TabIndex = 2;
+            this.Mini8Tile3.Text = "Mini8Tile3";
+            this.Mini8Tile3.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile2
+            // 
+            this.Mini8Tile2.AutoSize = true;
+            this.Mini8Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile2.Location = new System.Drawing.Point(48, 0);
+            this.Mini8Tile2.Name = "Mini8Tile2";
+            this.Mini8Tile2.Size = new System.Drawing.Size(39, 45);
+            this.Mini8Tile2.TabIndex = 1;
+            this.Mini8Tile2.Text = "Mini8Tile2";
+            this.Mini8Tile2.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini8Tile1
+            // 
+            this.Mini8Tile1.AutoSize = true;
+            this.Mini8Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini8Tile1.Location = new System.Drawing.Point(3, 0);
+            this.Mini8Tile1.Name = "Mini8Tile1";
+            this.Mini8Tile1.Size = new System.Drawing.Size(39, 45);
+            this.Mini8Tile1.TabIndex = 0;
+            this.Mini8Tile1.Text = "Mini8Tile1";
+            this.Mini8Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Cell9
+            // 
+            this.Cell9.Controls.Add(this.winLabel9);
+            this.Cell9.Controls.Add(this.miniGrid9);
+            this.Cell9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Cell9.Location = new System.Drawing.Point(290, 289);
+            this.Cell9.Name = "Cell9";
+            this.Cell9.Size = new System.Drawing.Size(136, 137);
+            this.Cell9.TabIndex = 17;
             // 
             // winLabel9
             // 
@@ -1571,6 +1448,130 @@
             this.winLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.winLabel9.Visible = false;
             // 
+            // miniGrid9
+            // 
+            this.miniGrid9.ColumnCount = 3;
+            this.miniGrid9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid9.Controls.Add(this.Mini9Tile9, 2, 2);
+            this.miniGrid9.Controls.Add(this.Mini9Tile8, 1, 2);
+            this.miniGrid9.Controls.Add(this.Mini9Tile7, 0, 2);
+            this.miniGrid9.Controls.Add(this.Mini9Tile6, 2, 1);
+            this.miniGrid9.Controls.Add(this.Mini9Tile5, 1, 1);
+            this.miniGrid9.Controls.Add(this.Mini9Tile4, 0, 1);
+            this.miniGrid9.Controls.Add(this.Mini9Tile3, 2, 0);
+            this.miniGrid9.Controls.Add(this.Mini9Tile2, 1, 0);
+            this.miniGrid9.Controls.Add(this.Mini9Tile1, 0, 0);
+            this.miniGrid9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniGrid9.Location = new System.Drawing.Point(0, 0);
+            this.miniGrid9.Name = "miniGrid9";
+            this.miniGrid9.RowCount = 3;
+            this.miniGrid9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.miniGrid9.Size = new System.Drawing.Size(136, 137);
+            this.miniGrid9.TabIndex = 8;
+            // 
+            // Mini9Tile9
+            // 
+            this.Mini9Tile9.AutoSize = true;
+            this.Mini9Tile9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile9.Location = new System.Drawing.Point(93, 90);
+            this.Mini9Tile9.Name = "Mini9Tile9";
+            this.Mini9Tile9.Size = new System.Drawing.Size(40, 47);
+            this.Mini9Tile9.TabIndex = 8;
+            this.Mini9Tile9.Text = "Mini9Tile9";
+            this.Mini9Tile9.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile8
+            // 
+            this.Mini9Tile8.AutoSize = true;
+            this.Mini9Tile8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile8.Location = new System.Drawing.Point(48, 90);
+            this.Mini9Tile8.Name = "Mini9Tile8";
+            this.Mini9Tile8.Size = new System.Drawing.Size(39, 47);
+            this.Mini9Tile8.TabIndex = 7;
+            this.Mini9Tile8.Text = "Mini9Tile8";
+            this.Mini9Tile8.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile7
+            // 
+            this.Mini9Tile7.AutoSize = true;
+            this.Mini9Tile7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile7.Location = new System.Drawing.Point(3, 90);
+            this.Mini9Tile7.Name = "Mini9Tile7";
+            this.Mini9Tile7.Size = new System.Drawing.Size(39, 47);
+            this.Mini9Tile7.TabIndex = 6;
+            this.Mini9Tile7.Text = "Mini9Tile7";
+            this.Mini9Tile7.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile6
+            // 
+            this.Mini9Tile6.AutoSize = true;
+            this.Mini9Tile6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile6.Location = new System.Drawing.Point(93, 45);
+            this.Mini9Tile6.Name = "Mini9Tile6";
+            this.Mini9Tile6.Size = new System.Drawing.Size(40, 45);
+            this.Mini9Tile6.TabIndex = 5;
+            this.Mini9Tile6.Text = "Mini9Tile6";
+            this.Mini9Tile6.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile5
+            // 
+            this.Mini9Tile5.AutoSize = true;
+            this.Mini9Tile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile5.Location = new System.Drawing.Point(48, 45);
+            this.Mini9Tile5.Name = "Mini9Tile5";
+            this.Mini9Tile5.Size = new System.Drawing.Size(39, 45);
+            this.Mini9Tile5.TabIndex = 4;
+            this.Mini9Tile5.Text = "Mini9Tile5";
+            this.Mini9Tile5.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile4
+            // 
+            this.Mini9Tile4.AutoSize = true;
+            this.Mini9Tile4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile4.Location = new System.Drawing.Point(3, 45);
+            this.Mini9Tile4.Name = "Mini9Tile4";
+            this.Mini9Tile4.Size = new System.Drawing.Size(39, 45);
+            this.Mini9Tile4.TabIndex = 3;
+            this.Mini9Tile4.Text = "Mini9Tile4";
+            this.Mini9Tile4.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile3
+            // 
+            this.Mini9Tile3.AutoSize = true;
+            this.Mini9Tile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile3.Location = new System.Drawing.Point(93, 0);
+            this.Mini9Tile3.Name = "Mini9Tile3";
+            this.Mini9Tile3.Size = new System.Drawing.Size(40, 45);
+            this.Mini9Tile3.TabIndex = 2;
+            this.Mini9Tile3.Text = "Mini9Tile3";
+            this.Mini9Tile3.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile2
+            // 
+            this.Mini9Tile2.AutoSize = true;
+            this.Mini9Tile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile2.Location = new System.Drawing.Point(48, 0);
+            this.Mini9Tile2.Name = "Mini9Tile2";
+            this.Mini9Tile2.Size = new System.Drawing.Size(39, 45);
+            this.Mini9Tile2.TabIndex = 1;
+            this.Mini9Tile2.Text = "Mini9Tile2";
+            this.Mini9Tile2.Click += new System.EventHandler(this.Tile_Click);
+            // 
+            // Mini9Tile1
+            // 
+            this.Mini9Tile1.AutoSize = true;
+            this.Mini9Tile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mini9Tile1.Location = new System.Drawing.Point(3, 0);
+            this.Mini9Tile1.Name = "Mini9Tile1";
+            this.Mini9Tile1.Size = new System.Drawing.Size(39, 45);
+            this.Mini9Tile1.TabIndex = 0;
+            this.Mini9Tile1.Text = "Mini9Tile1";
+            this.Mini9Tile1.Click += new System.EventHandler(this.Tile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1578,6 +1579,7 @@
             this.ClientSize = new System.Drawing.Size(684, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Strategic Tic-Tac-Toe";
@@ -1585,33 +1587,33 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.superGridLayout.ResumeLayout(false);
-            this.miniGrid9.ResumeLayout(false);
-            this.miniGrid9.PerformLayout();
-            this.miniGrid8.ResumeLayout(false);
-            this.miniGrid8.PerformLayout();
-            this.miniGrid7.ResumeLayout(false);
-            this.miniGrid7.PerformLayout();
-            this.miniGrid6.ResumeLayout(false);
-            this.miniGrid6.PerformLayout();
-            this.miniGrid5.ResumeLayout(false);
-            this.miniGrid5.PerformLayout();
-            this.miniGrid4.ResumeLayout(false);
-            this.miniGrid4.PerformLayout();
-            this.miniGrid3.ResumeLayout(false);
-            this.miniGrid3.PerformLayout();
+            this.Cell2.ResumeLayout(false);
             this.miniGrid2.ResumeLayout(false);
             this.miniGrid2.PerformLayout();
+            this.Cell1.ResumeLayout(false);
             this.miniGrid1.ResumeLayout(false);
             this.miniGrid1.PerformLayout();
-            this.Cell2.ResumeLayout(false);
-            this.Cell1.ResumeLayout(false);
             this.Cell3.ResumeLayout(false);
+            this.miniGrid3.ResumeLayout(false);
+            this.miniGrid3.PerformLayout();
             this.Cell4.ResumeLayout(false);
+            this.miniGrid4.ResumeLayout(false);
+            this.miniGrid4.PerformLayout();
             this.Cell5.ResumeLayout(false);
+            this.miniGrid5.ResumeLayout(false);
+            this.miniGrid5.PerformLayout();
             this.Cell6.ResumeLayout(false);
+            this.miniGrid6.ResumeLayout(false);
+            this.miniGrid6.PerformLayout();
             this.Cell7.ResumeLayout(false);
+            this.miniGrid7.ResumeLayout(false);
+            this.miniGrid7.PerformLayout();
             this.Cell8.ResumeLayout(false);
+            this.miniGrid8.ResumeLayout(false);
+            this.miniGrid8.PerformLayout();
             this.Cell9.ResumeLayout(false);
+            this.miniGrid9.ResumeLayout(false);
+            this.miniGrid9.PerformLayout();
             this.ResumeLayout(false);
 
         }
