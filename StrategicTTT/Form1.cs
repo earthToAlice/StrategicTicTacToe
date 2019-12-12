@@ -70,11 +70,10 @@ namespace StrategicTTT
             // Parses tileNum into 2 numbers usable as a 2D index
             int idx1 = tileNum / 3;
             int idx2 = tileNum % 3;
-            sbi1 = miniNum / 3;
-            sbi2 = miniNum % 3;
+            if (superGrid[sbi1, sbi2] != '\0') { sbi1 = miniNum / 3; sbi2 = miniNum % 3; }
 
             char[,] activeGrid = boardGrid[sbi1, sbi2].Grid;
-
+            
             // Executes if the player clicked inside the correct
             // miniGrid AND the tile clicked was empty
             if (CheckValidMini(miniNum) && (activeGrid[idx1, idx2] == '\0'))
@@ -170,7 +169,7 @@ namespace StrategicTTT
 
         private void SetMiniHighlight(int miniNum)
         {
-            if (true)
+            if (superGrid[sbi1, sbi2] == '\0')
             {
                 ((TableLayoutPanel)Controls.Find($"miniGrid{((sbi2 + 1) + (sbi1 * 3))}", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
             }
