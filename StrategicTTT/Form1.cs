@@ -41,15 +41,19 @@ namespace StrategicTTT
                     BoardGrid[i, j] = new Board((j + 1) + (i * 3), this);
                 }
             }
+
+            ((TableLayoutPanel)Controls.Find("miniGrid5", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void RestartBtn_Click(object sender, EventArgs e)
         {
+            ResetBoard();
             sceneManager.ShowGameScreen();
         }
 
@@ -85,11 +89,11 @@ namespace StrategicTTT
                 if (CheckWin(activeGrid)) SuperGrid[sbi1, sbi2] = turn;
 
                 // Updates the winLabel for the current miniGrid
-                if (SuperGrid[sbi1, sbi2] != '\0') gameScreen1.UpdateWinLabel(miniNum, turn);
+                if (SuperGrid[sbi1, sbi2] != '\0') gameScreen1.UpdateWinLabel(miniNum);
 
                 // If SuperGrid was won, terminate all processes and exit
                 // [CHANGE TO WIN SCREEN]
-                if (CheckWin(SuperGrid)) Application.Exit();
+                if (CheckWin(SuperGrid)) sceneManager.ShowWinner(turn);
 
                 // X => O or O => X
                 SwapTurns();
@@ -168,9 +172,26 @@ namespace StrategicTTT
                     break;
             }
 
-            gameScreen1.TurnDisplay(turn);
+            gameScreen1.TurnDisplay();
 
         } //swapTurn()
+
+        private void ResetBoard()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    BoardGrid[i, j].Reset();
+                    SuperGrid[i, j] = '\0';
+                }
+            }
+
+            sbi1 = 1;
+            sbi2 = 1;
+
+            gameScreen1.Reset();
+        }
 
         // Manages each miniGrid and it's display
         public class Board
@@ -180,18 +201,33 @@ namespace StrategicTTT
             private Form c;
             public char[,] Grid { get; set; } = new char[3, 3];
 
-            public Board(int id, Form c) { miniID = id; this.c = c; }
+            public Board(int id, Form c)
+            {
+                miniID = id;
+                this.c = c;
+            }
 
             // Updates the objects on-screen grid with the values in Grid
             public void UpdateMini(int i, int j)
             {
                 ((Label)c.Controls.Find($"Mini{miniID}Tile{(j + 1 + (i * 3))}", true)[0]).Text = Convert.ToString(Grid[i, j]);
             }
+
+            public void Reset()
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        Grid[i, j] = '\0';
+                    }
+                }
+            }
         }
     }
 
     // Manages the different screens
-    class SceneManager : Form1
+    class SceneManager
     {
         UserControl gameScreen;
         UserControl winScreen;
