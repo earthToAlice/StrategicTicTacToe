@@ -12,20 +12,31 @@ namespace StrategicTTT
 {
     public partial class Form1 : Form
     {
+        // Manages the visibility of screens
         SceneManager sceneManager;
-        // Holds the values of each tile
+        // Holds all miniGrid Board objects
         Board[,] BoardGrid = new Board[3, 3];
+        // Holds the value of each space on the large board
         char[,] SuperGrid = new char[3, 3];
+        // SuperBoardIndexes 1 and 2 (location of current miniGrid)
         int sbi1 = 1, sbi2 = 1;
+        // Holds the current turn
         char turn = 'X';
 
+        // Ininitalizes the form and sets up all components
         public Form1()
         {
+            // Library-made method
             InitializeComponent();
 
-            sceneManager = new SceneManager(gameScreen1, winScreen1);
+            // Creates a new SceneManager and gives access to game, win, and rules screens
+            sceneManager = new SceneManager(gameScreen1, winScreen1, rulesScreen1);
+            // Links all singular event handlers for buttons
             ((Button)winScreen1.Controls.Find("restartBtn", true)[0]).Click += new EventHandler(RestartBtn_Click);
+            ((Label)gameScreen1.Controls.Find("rulesLabel", true)[0]).Click += new EventHandler(HTP_Click);
+            ((Label)rulesScreen1.Controls.Find("backBtn", true)[0]).Click += new EventHandler(backBtn_Click);
 
+            // Links every tile to event handler Tile_Click
             for (int i = 1; i <= 9; i++)
             {
                 for (int j = 1; j <= 9; j++)
@@ -34,6 +45,7 @@ namespace StrategicTTT
                 }
             }
 
+            // Initializes every board object with miniID and the form
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -42,21 +54,33 @@ namespace StrategicTTT
                 }
             }
 
+            // Highlights the center miniGrid
             ((TableLayoutPanel)Controls.Find("miniGrid5", true)[0]).BackColor = Color.FromArgb(235, 225, 218);
 
+            gameScreen1.TurnDisplay(turn);
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        // Shows the instructions screen when How to Play button is clicked
+        private void HTP_Click(object sender, EventArgs e)
         {
-            
+            sceneManager.ShowInstructions();
         }
 
+        // Shows the game screen when the back button on the instructions screen is clicked
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            sceneManager.ShowGameScreen();
+        }
+
+        // Resets the board and shows the game screen when restart button is clicked
         private void RestartBtn_Click(object sender, EventArgs e)
         {
             ResetBoard();
             sceneManager.ShowGameScreen();
         }
 
+        // When any tile is clicked, call UpdateBoard with specific tile's info
         private void Tile_Click(object sender, EventArgs e)
         {
             Label tile = (Label)sender;
@@ -65,6 +89,8 @@ namespace StrategicTTT
             UpdateBoard(tileNum, miniNum);
         }
 
+        // Checks if the tile is valid, updates the display, checks if anyone
+        // won, and sets up for next turn
         private void UpdateBoard(int tileNum, int miniNum)
         { //nice
             // Parses tileNum into 2 numbers usable as a 2D index
@@ -101,15 +127,6 @@ namespace StrategicTTT
                 // Update the screen with the current grid
                 BoardGrid[sbi1, sbi2].UpdateMini(idx1, idx2);
 
-                // Resets all TableLayoutPanel BGs
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        ((TableLayoutPanel)Controls.Find($"miniGrid{((i + 1) + (j * 3))}", true)[0]).BackColor = Color.Transparent;
-                    }
-                }
-
                 // Updates superBoardIndexes
                 sbi1 = idx1;
                 sbi2 = idx2;
@@ -119,6 +136,7 @@ namespace StrategicTTT
             }
         }
 
+        // Checks whether the selected grid has been won
         private bool CheckWin(char[,] activeGrid)
         {
             int h, v, up, down;
@@ -143,6 +161,7 @@ namespace StrategicTTT
             return false;
         }
 
+        // Checks whether the tile clicked was within the correct miniGrid
         private bool CheckValidMini(int miniNum)
         {
             bool output;
@@ -159,6 +178,7 @@ namespace StrategicTTT
             return output;
         }
 
+        // Swaps between X and O
         private void SwapTurns()
         {
             switch (turn)
@@ -172,10 +192,11 @@ namespace StrategicTTT
                     break;
             }
 
-            gameScreen1.TurnDisplay();
+            gameScreen1.TurnDisplay(turn);
 
         } //swapTurn()
 
+        // Fully resets the board
         private void ResetBoard()
         {
             for (int i = 0; i < 3; i++)
@@ -213,6 +234,7 @@ namespace StrategicTTT
                 ((Label)c.Controls.Find($"Mini{miniID}Tile{(j + 1 + (i * 3))}", true)[0]).Text = Convert.ToString(Grid[i, j]);
             }
 
+            // Resets the individual miniGrid
             public void Reset()
             {
                 for (int i = 0; i < 3; i++)
@@ -229,18 +251,23 @@ namespace StrategicTTT
     // Manages the different screens
     class SceneManager
     {
-        UserControl gameScreen;
-        UserControl winScreen;
+        UserControl gameScreen, winScreen, rulesScreen;
 
-        public SceneManager(UserControl game, UserControl win)
+        public SceneManager(UserControl game, UserControl win, UserControl rules)
         {
             gameScreen = game;
             winScreen = win;
+            rulesScreen = rules;
         }
 
         public void ShowGameScreen()
         {
             gameScreen.BringToFront();
+        }
+
+        public void ShowInstructions()
+        {
+            rulesScreen.BringToFront();
         }
 
         public void ShowWinner(char winner)

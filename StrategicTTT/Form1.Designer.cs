@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.winScreen1 = new STTTBoard.WinScreen();
             this.gameScreen1 = new STTTBoard.GameScreen();
+            this.winScreen1 = new STTTBoard.WinScreen();
+            this.rulesScreen1 = new STTTBoard.RulesScreen();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,11 +40,22 @@
             // 
             this.panel1.Controls.Add(this.gameScreen1);
             this.panel1.Controls.Add(this.winScreen1);
+            this.panel1.Controls.Add(this.rulesScreen1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(684, 461);
             this.panel1.TabIndex = 1;
+            // 
+            // gameScreen1
+            // 
+            this.gameScreen1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(238)))));
+            this.gameScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gameScreen1.Location = new System.Drawing.Point(0, 0);
+            this.gameScreen1.Name = "gameScreen1";
+            this.gameScreen1.Size = new System.Drawing.Size(684, 461);
+            this.gameScreen1.TabIndex = 2;
+            this.gameScreen1.Turn = '\0';
             // 
             // winScreen1
             // 
@@ -54,14 +66,14 @@
             this.winScreen1.Size = new System.Drawing.Size(684, 461);
             this.winScreen1.TabIndex = 1;
             // 
-            // gameScreen1
+            // rulesScreen1
             // 
-            this.gameScreen1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(238)))));
-            this.gameScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gameScreen1.Location = new System.Drawing.Point(0, 0);
-            this.gameScreen1.Name = "gameScreen1";
-            this.gameScreen1.Size = new System.Drawing.Size(684, 461);
-            this.gameScreen1.TabIndex = 2;
+            this.rulesScreen1.BackColor = System.Drawing.Color.SeaShell;
+            this.rulesScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rulesScreen1.Location = new System.Drawing.Point(0, 0);
+            this.rulesScreen1.Name = "rulesScreen1";
+            this.rulesScreen1.Size = new System.Drawing.Size(684, 461);
+            this.rulesScreen1.TabIndex = 3;
             // 
             // Form1
             // 
@@ -75,7 +87,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Strategic Tic-Tac-Toe";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -85,6 +96,7 @@
         private System.Windows.Forms.Panel panel1;
         private STTTBoard.WinScreen winScreen1;
         private STTTBoard.GameScreen gameScreen1;
+        private STTTBoard.RulesScreen rulesScreen1;
     }
 }
 
